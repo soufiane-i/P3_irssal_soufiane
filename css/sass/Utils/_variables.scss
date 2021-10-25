@@ -1,0 +1,24 @@
+//Generals
+$bg_color : #181f2a;
+$bg-color-head : #1c2431;
+$text-primary-color : #ffffff;
+$text-primary-font : 'Raleway';
+$text-h1-size : ("mobile": 20px, "tablet": 26px, "pc": 28px);
+$text-h2-size : ("mobile": 16px, "tablet": 23px, "pc": 25px);
+$text-p-size : ("mobile": 11px, "tablet": 20px, "pc": 18px);
+$text-nav-size : ("mobile": 12px, "tablet": 23px, "pc": 25px);
+$text-comment-size : ("mobile": 12px, "tablet": 23px, "pc": 25px);
+$text-profil-size : ("mobile": 14px, "tablet": 23px, "pc": 25px);
+$text-profil-sub-size : ("mobile": 10px, "tablet": 23px, "pc": 25px);
+$color_secondary : #65e2d9;
+$bg-temoignage : #202a3c;
+$button-bg : #339ecc;
+$footer-bg : #0b1523;
+
+
+$breakpoints: (
+    mobile: 767px,
+    min-tablet: 768px,
+    max-tablet: 1024px,
+    pc:1025px
+);
