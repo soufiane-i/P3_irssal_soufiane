@@ -1,20 +1,59 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
 
+*
+{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+section {
+  @include paddingSection;
+}
   
-  a{
+  a
+  {
     text-decoration: none;
   }
 
-  a:hover {
+  a:hover 
+  {
     text-decoration: underline;
+  }
+
+  h1
+  {
+    font-size: map-get($font-size-h1, "pc" );
+  }
+
+  h2
+  {
+    font-size: map-get($font-size-h2, "pc" );
+  }
+
+  h3 
+  {
+    font-size: map-get($font-size-h3, "pc" );
+    font-family: "Roboto", "Sans Serif";
+    font-weight: bold;
+  }
+
+  p 
+  {
+    font-size: map-get($font-size-p,"mobile" );
+    font-family: "Roboto", "Sans Serif";
+    color: $color-location;
+  }
+
+  .fonctionnement__etape__numero
+  {
+    font-size: map-get($font-size-numero,"mobile" );
+    color: white;
   }
   
   
-  @mixin mobile-only {
+  @mixin mobile-only 
+  {
       
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
@@ -22,7 +61,8 @@
   
   }
   
-  @mixin tablet-only {
+  @mixin tablet-only 
+  {
     
     @media screen and (min-width: map-get($breakpoints, min-tablet)) and (max-width: map-get($breakpoints, max-tablet)) {
         @content;
@@ -31,10 +71,73 @@
   }
   
   
-  @mixin pc-only {
+  @mixin pc-only 
+  {
     
     @media screen and (min-width: map-get($breakpoints, pc)) {
         @content;
     }
   
+  }
+
+
+  @include mobile-only 
+  {
+    h1
+    {
+      font-size: map-get($font-size-h1, "mobile" );
+      font-family: "Roboto", "Sans Serif";
+    }
+  
+    h2
+    {
+      font-size: map-get($font-size-h2, "mobile" );
+      font-family: "Roboto", "Sans Serif";
+    }
+  
+    h3 
+    {
+      font-size: map-get($font-size-h3, "mobile" );
+      font-family: "Roboto", "Sans Serif";
+      font-weight: bold;
+    }
+  
+    p 
+    {
+      font-size: map-get($font-size-p,"mobile" );
+      font-family: "Roboto", "Sans Serif";
+    }
+
+    a
+    {
+      font-size: map-get($font-size-a,"mobile" );
+      font-family: "Roboto", "Sans Serif";
+    }
+  }
+
+  @include tablet-only 
+  {
+    h1
+    {
+      font-size: map-get($font-size-h1, "tablet" );
+    }
+  
+    h2
+    {
+      font-size: map-get($font-size-h2, "tablet" );
+    }
+  
+    h3 
+    {
+      font-size: map-get($font-size-h3, "tablet" );
+      font-family: "Roboto", "Sans Serif";
+      font-weight: bold;
+    }
+  
+    p 
+    {
+      font-size: map-get($font-size-p,"tablet" );
+      font-family: "Roboto", "Sans Serif";
+      color: $color-location;
+    }
   }
