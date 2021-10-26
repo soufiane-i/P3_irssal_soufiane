@@ -50,6 +50,12 @@ section {
     font-size: map-get($font-size-numero,"mobile" );
     color: white;
   }
+
+  .p-restaurant
+  {
+    font-size: map-get($font-size-restaurant-p , "mobile");
+    font-weight: lighter;
+  }
   
   
   @mixin mobile-only 

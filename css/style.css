@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Roboto", "Sans Serif";
   color: #505050;
 }
@@ -41,6 +41,11 @@ p {
 .fonctionnement__etape__numero {
   font-size: 0.8rem;
   color: white;
+}
+
+.p-restaurant {
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 767px) {
@@ -58,7 +63,7 @@ p {
     font-weight: bold;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "Roboto", "Sans Serif";
   }
   a {
@@ -134,6 +139,7 @@ header {
 .presentation__main p {
   font-weight: lighter;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .presentation__main a {
@@ -192,14 +198,14 @@ header {
 }
 
 .fonctionnement__etape i {
-  width: 10%;
+  width: 15%;
   text-align: center;
   color: gray;
 }
 
 .fonctionnement__etape p:nth-child(3) {
   color: black;
-  padding: 0 5%;
+  padding: 0 2%;
 }
 
 .restaurants {
@@ -220,6 +226,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0;
 }
 
 .restaurants__cards__card {
@@ -233,8 +240,7 @@ header {
   height: auto;
   -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-  border-radius: 25px;
+  border-radius: 15px;
   margin-bottom: 35px;
   margin-right: 5px;
   margin-left: 5px;
@@ -242,17 +248,47 @@ header {
 }
 
 .restaurants__cards__card__imgContainer {
-  height: 150px;
+  height: 200px;
   overflow: hidden;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
 }
 
 .restaurants__cards__card__imgContainer img {
-  height: 150%;
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: translate3d(0px, -70px, 0px);
-          transform: translate3d(0px, -70px, 0px);
+}
+
+.restaurants__cards__card__imgContainer p {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  color: #008766;
+  background-color: #99e2d0;
+  font-weight: normal;
+  border-radius: 2px;
+  padding: 5px 15px;
+  z-index: 1;
+}
+
+.restaurants__cards__card__descriptionContainer {
+  padding: 15px 5%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurants__cards__card__descriptionContainer h4 {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
