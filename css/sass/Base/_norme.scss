@@ -6,10 +6,6 @@
     scroll-behavior: smooth;
     margin: 0;
 }
-
-section {
-  @include paddingSection;
-}
   
   a
   {
@@ -36,6 +32,12 @@ section {
     font-size: map-get($font-size-h3, "pc" );
     font-family: "Roboto", "Sans Serif";
     font-weight: bold;
+  }
+
+  h5
+  {
+    font-size: map-get($font-size-h5, "pc" );
+    font-family: "Roboto", "Sans Serif";
   }
 
   p 
@@ -107,6 +109,13 @@ section {
       font-family: "Roboto", "Sans Serif";
       font-weight: bold;
     }
+
+    h5
+    {
+      font-size: map-get($font-size-h5, "mobile" );
+      font-family: "Roboto", "Sans Serif";
+      font-weight: normal;
+    }
   
     p 
     {
@@ -119,6 +128,8 @@ section {
       font-size: map-get($font-size-a,"mobile" );
       font-family: "Roboto", "Sans Serif";
     }
+
+
   }
 
   @include tablet-only 

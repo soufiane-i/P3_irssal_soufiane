@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-section {
-  padding: 0 5%;
-}
-
 a {
   text-decoration: none;
 }
@@ -30,6 +26,11 @@ h3 {
   font-size: 28px;
   font-family: "Roboto", "Sans Serif";
   font-weight: bold;
+}
+
+h5 {
+  font-size: 28px;
+  font-family: "Roboto", "Sans Serif";
 }
 
 p {
@@ -61,6 +62,11 @@ p {
     font-size: 20px;
     font-family: "Roboto", "Sans Serif";
     font-weight: bold;
+  }
+  h5 {
+    font-size: 1rem;
+    font-family: "Roboto", "Sans Serif";
+    font-weight: normal;
   }
   p {
     font-size: 1.2rem;
@@ -290,5 +296,45 @@ header {
 
 .restaurants__cards__card__descriptionContainer h4 {
   margin-bottom: 5px;
+}
+
+.footer {
+  padding: 20px 5%;
+  background-color: #353535;
+  color: white;
+}
+
+.footer h3 {
+  font-family: "Shrikhand", "Sans Serif";
+  font-weight: normal;
+  padding: 20px 0;
+}
+
+.footer__liens {
+  margin-bottom: 10px;
+}
+
+.footer__liens__lien {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.footer__liens__lien__i {
+  width: 5%;
+  margin-right: 1vw;
+}
+
+.footer__liens__lien:nth-child(2) i {
+  -webkit-transform: rotate(-40deg) scale(0.8) translate3d(0px, -2px, 0);
+          transform: rotate(-40deg) scale(0.8) translate3d(0px, -2px, 0);
+}
+
+.footer__liens a {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
