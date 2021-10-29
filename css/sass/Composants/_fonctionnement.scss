@@ -2,51 +2,129 @@
 {
     @include paddingSection;
     margin-bottom: 50px;
+    
+    @include tablet-only
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6vw;
+    }
+
+
+    @include pc-only
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vw;
+        flex-wrap: wrap;
+    }
+    
 
     h2
     {
-        margin-bottom: 30px;
+        margin-bottom: 8vw;
+
+        @include pc-only
+        {
+            margin-bottom: 3vw;
+        }
     }
 
-    &__etape
+    &__etapes
     {
-        display: flex;
-        align-items: center;
-        background-color: $color-bg-primary;
-        margin-bottom: 30px;
-        padding: 28px 20px;
-        margin-left: 10px;
-        border-radius: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        position: relative;
 
-        &__numero
+        display: flex;
+        flex-direction: column;
+
+        @include tablet-only
         {
-            background-color: $color-primary;
-            border-radius: 50px;
-            width: 25px;
-            height: 25px;
-            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+
+        @include pc-only
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+        }
+        
+        &__etape
+        {
             display: flex;
             align-items: center;
-            justify-content: center;
-            position: absolute;
-            left: -13px;
+            background-color: $color-bg-primary;
+            margin-bottom: 30px;
+            padding: 28px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+
+    
+            @include tablet-only
+            {
+                width: 60%;
+            }
+    
+            @include pc-only
+            {
+                width: 28%;
+            }
+    
+            &__numero
+            {
+                background-color: $color-primary;
+                border-radius: 50px;
+                width: 25px;
+                height: 25px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: -3vw;
+    
+                @include tablet-only
+                {
+                    width: 35px;
+                    height: 35px;
+                    left: -2.2vw;
+                }
+    
+                
+                @include pc-only
+                {
+                    width: 35px;
+                    height: 35px;
+                    left: -1vw;
+                }
+        
+            }
+    
+            i
+            {
+                width: 15%;
+                text-align: center;
+                color: gray;
+            }
+    
+            p:nth-child(3)
+            {
+                color: black;
+                padding: 0 2%;
+            }
+    
+    
         }
-
-        i
-        {
-            width: 15%;
-            text-align: center;
-            color: gray;
-        }
-
-        p:nth-child(3)
-        {
-            color: black;
-            padding: 0 2%;
-        }
-
-
     }
+
+
 }

@@ -15,41 +15,105 @@ a:hover {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 3rem;
+  font-family: "Roboto", "Sans Serif";
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 2.4rem;
+  font-family: "Roboto", "Sans Serif";
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.8rem;
   font-family: "Roboto", "Sans Serif";
   font-weight: bold;
 }
 
-h5 {
-  font-size: 28px;
+h4 {
+  font-size: 1.4rem;
   font-family: "Roboto", "Sans Serif";
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: "Roboto", "Sans Serif";
-  color: #505050;
 }
 
-.fonctionnement__etape__numero {
-  font-size: 0.8rem;
+.p-localisation {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1.3rem;
+  font-family: "Roboto", "Sans Serif";
+}
+
+.fonctionnement__etapes__etape__numero {
+  font-size: 1rem;
   color: white;
 }
 
 .p-restaurant {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 
-@media screen and (max-width: 767px) {
+.p-fonctionnement {
+  font-size: 1.3rem;
+}
+
+.footer-a {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 2.1rem;
+    font-family: "Roboto", "Sans Serif";
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: "Roboto", "Sans Serif";
+  }
+  h3 {
+    font-size: 1.8rem;
+    font-family: "Roboto", "Sans Serif";
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-family: "Roboto", "Sans Serif";
+    font-weight: normal;
+  }
+  p {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Sans Serif";
+  }
+  .p-localisation {
+    font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.3rem;
+    font-family: "Roboto", "Sans Serif";
+  }
+  .fonctionnement__etapes__etape__numero {
+    font-size: 1rem;
+    color: white;
+  }
+  .p-restaurant {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  .p-fonctionnement {
+    font-size: 1.3rem;
+  }
+  .footer-a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 1.6rem;
     font-family: "Roboto", "Sans Serif";
@@ -59,12 +123,12 @@ p {
     font-family: "Roboto", "Sans Serif";
   }
   h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "Roboto", "Sans Serif";
     font-weight: bold;
   }
-  h5 {
-    font-size: 1rem;
+  h4 {
+    font-size: 1.2rem;
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
   }
@@ -72,28 +136,26 @@ p {
     font-size: 1.2rem;
     font-family: "Roboto", "Sans Serif";
   }
+  .p-localisation {
+    font-size: 1.2rem;
+  }
+  .p-fonctionnement {
+    font-size: 1.2rem;
+  }
   a {
     font-size: 1.1rem;
     font-family: "Roboto", "Sans Serif";
   }
-}
-
-@media screen and (min-width: null) and (max-width: null) {
-  h1 {
-    font-size: 26px;
+  .fonctionnement__etapes__etape__numero {
+    font-size: 0.9rem;
+    color: white;
   }
-  h2 {
-    font-size: 26px;
+  .p-restaurant {
+    font-size: 1rem;
+    font-weight: lighter;
   }
-  h3 {
-    font-size: 26px;
-    font-family: "Roboto", "Sans Serif";
-    font-weight: bold;
-  }
-  p {
-    font-size: 26px;
-    font-family: "Roboto", "Sans Serif";
-    color: #505050;
+  .footer-a {
+    font-size: 0.9rem;
   }
 }
 
@@ -104,7 +166,19 @@ header {
 }
 
 .presentation {
-  margin-bottom: 50px;
+  margin-bottom: 3vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .presentation {
+    margin-bottom: 6vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .presentation {
+    margin-bottom: 3vw;
+  }
 }
 
 .presentation__localisation {
@@ -114,6 +188,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0 5px 5px -4px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 5px 5px -4px rgba(0, 0, 0, 0.2);
@@ -126,7 +203,7 @@ header {
   padding-left: 20px;
 }
 
-.presentation__localisation p {
+.presentation__localisation .p-localisation {
   color: #505050;
 }
 
@@ -137,15 +214,55 @@ header {
   text-align: center;
 }
 
+@media screen and (min-width: 1025px) {
+  .presentation__main {
+    padding-bottom: 120px;
+  }
+}
+
 .presentation__main h1 {
-  margin-right: 12%;
-  margin-left: 12%;
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .presentation__main h1 {
+    padding: 30px 5%;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .presentation__main h1 {
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 80px 5%;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .presentation__main p {
   font-weight: lighter;
-  margin-bottom: 50px;
+  margin-bottom: 10vw;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .presentation__main p {
+    margin-bottom: 13vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .presentation__main p {
+    margin-bottom: 6vw;
+  }
 }
 
 .presentation__main a {
@@ -163,11 +280,98 @@ header {
   margin-bottom: 50px;
 }
 
-.fonctionnement h2 {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 6vw;
+  }
 }
 
-.fonctionnement__etape {
+@media screen and (min-width: 1025px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.fonctionnement h2 {
+  margin-bottom: 8vw;
+}
+
+@media screen and (min-width: 1025px) {
+  .fonctionnement h2 {
+    margin-bottom: 3vw;
+  }
+}
+
+.fonctionnement__etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement__etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .fonctionnement__etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+  }
+}
+
+.fonctionnement__etapes__etape {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +388,19 @@ header {
   position: relative;
 }
 
-.fonctionnement__etape__numero {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement__etapes__etape {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .fonctionnement__etapes__etape {
+    width: 28%;
+  }
+}
+
+.fonctionnement__etapes__etape__numero {
   background-color: #9356DC;
   border-radius: 50px;
   width: 25px;
@@ -200,16 +416,32 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  left: -13px;
+  left: -3vw;
 }
 
-.fonctionnement__etape i {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement__etapes__etape__numero {
+    width: 35px;
+    height: 35px;
+    left: -2.2vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .fonctionnement__etapes__etape__numero {
+    width: 35px;
+    height: 35px;
+    left: -1vw;
+  }
+}
+
+.fonctionnement__etapes__etape i {
   width: 15%;
   text-align: center;
   color: gray;
 }
 
-.fonctionnement__etape p:nth-child(3) {
+.fonctionnement__etapes__etape p:nth-child(3) {
   color: black;
   padding: 0 2%;
 }
@@ -217,11 +449,51 @@ header {
 .restaurants {
   padding: 0 5%;
   background-color: #f6f6f6;
-  padding: 50px 5%;
+  padding: 60px 5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .restaurants h2 {
-  margin-bottom: 20px;
+  margin-bottom: 3vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurants h2 {
+    margin-bottom: 8vw;
+  }
+}
+
+.restaurants a {
+  text-decoration: none;
 }
 
 .restaurants__cards {
@@ -232,7 +504,36 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0;
+  padding: 20px 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .restaurants__cards__card {
@@ -251,6 +552,18 @@ header {
   margin-right: 5px;
   margin-left: 5px;
   background-color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurants__cards__card {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .restaurants__cards__card {
+    width: 20%;
+  }
 }
 
 .restaurants__cards__card__imgContainer {
@@ -296,6 +609,7 @@ header {
 
 .restaurants__cards__card__descriptionContainer h4 {
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .footer {
@@ -310,21 +624,74 @@ header {
   padding: 20px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer h3 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer h3 {
+    margin-bottom: 20px;
+  }
+}
+
 .footer__liens {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer__liens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+    height: auto;
+  }
 }
 
 .footer__liens__lien {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer__liens__lien {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer__liens__lien {
+    margin-right: 20%;
+    margin-bottom: 40px;
+  }
 }
 
 .footer__liens__lien__i {
   width: 5%;
   margin-right: 1vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer__liens__lien__i {
+    width: 2vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer__liens__lien__i {
+    width: 0.5vw;
+  }
 }
 
 .footer__liens__lien:nth-child(2) i {
@@ -334,7 +701,7 @@ header {
 
 .footer__liens a {
   font-weight: lighter;
-  font-size: 0.9rem;
   color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

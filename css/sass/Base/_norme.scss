@@ -20,11 +20,13 @@
   h1
   {
     font-size: map-get($font-size-h1, "pc" );
+    font-family: "Roboto", "Sans Serif";
   }
 
   h2
   {
     font-size: map-get($font-size-h2, "pc" );
+    font-family: "Roboto", "Sans Serif";
   }
 
   h3 
@@ -34,58 +36,121 @@
     font-weight: bold;
   }
 
-  h5
+  h4
   {
-    font-size: map-get($font-size-h5, "pc" );
+    font-size: map-get($font-size-h4, "pc" );
     font-family: "Roboto", "Sans Serif";
+   
   }
 
   p 
   {
-    font-size: map-get($font-size-p,"mobile" );
+    font-size: map-get($font-size-p,"pc" );
     font-family: "Roboto", "Sans Serif";
-    color: $color-location;
   }
 
-  .fonctionnement__etape__numero
+  .p-localisation
   {
-    font-size: map-get($font-size-numero,"mobile" );
+    font-size: map-get($font-size-p-localisation, "pc" );
+  }
+
+  a
+  {
+    font-size: map-get($font-size-a,"pc");
+    font-family: "Roboto", "Sans Serif";
+  }
+
+  .fonctionnement__etapes__etape__numero
+  {
+    font-size: map-get($font-size-numero,"pc");
     color: white;
   }
 
   .p-restaurant
   {
-    font-size: map-get($font-size-restaurant-p , "mobile");
+    font-size: map-get($font-size-restaurant-p , "pc");
     font-weight: lighter;
   }
-  
-  
-  @mixin mobile-only 
+
+  .p-fonctionnement
   {
-      
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
-        @content;
-    }
-  
+    font-size: map-get($font-size-p-fonctionnement ,"pc");
+  }
+
+  .footer-a
+  {
+    font-size: map-get($font-size-footer-a , "pc");
   }
   
-  @mixin tablet-only 
+
+
+
+  @include tablet-only 
   {
-    
-    @media screen and (min-width: map-get($breakpoints, min-tablet)) and (max-width: map-get($breakpoints, max-tablet)) {
-        @content;
+    h1
+    {
+      font-size: map-get($font-size-h1, "tablet" );
+      font-family: "Roboto", "Sans Serif";
     }
   
-  }
-  
-  
-  @mixin pc-only 
-  {
-    
-    @media screen and (min-width: map-get($breakpoints, pc)) {
-        @content;
+    h2
+    {
+      font-size: map-get($font-size-h2, "tablet" );
+      font-family: "Roboto", "Sans Serif";
     }
   
+    h3 
+    {
+      font-size: map-get($font-size-h3, "tablet" );
+      font-family: "Roboto", "Sans Serif";
+      font-weight: bold;
+    }
+
+    h4
+    {
+      font-size: map-get($font-size-h4, "tablet" );
+      font-family: "Roboto", "Sans Serif";
+      font-weight: normal;
+    }
+  
+    p 
+    {
+      font-size: map-get($font-size-p,"tablet" );
+      font-family: "Roboto", "Sans Serif";
+    }
+
+    .p-localisation
+    {
+      font-size: map-get($font-size-p-localisation, "tablet" );
+    }
+
+    a
+    {
+      font-size: map-get($font-size-a,"tablet");
+      font-family: "Roboto", "Sans Serif";
+    }
+
+    .fonctionnement__etapes__etape__numero
+    {
+      font-size: map-get($font-size-numero,"tablet");
+      color: white;
+    }
+  
+    .p-restaurant
+    {
+      font-size: map-get($font-size-restaurant-p , "tablet");
+      font-weight: lighter;
+    }
+
+    .p-fonctionnement
+    {
+      font-size: map-get($font-size-p-fonctionnement ,"tablet");
+    }
+
+    .footer-a
+    {
+      font-size: map-get($font-size-footer-a , "tablet");
+    }
   }
 
 
@@ -110,9 +175,9 @@
       font-weight: bold;
     }
 
-    h5
+    h4
     {
-      font-size: map-get($font-size-h5, "mobile" );
+      font-size: map-get($font-size-h4, "mobile" );
       font-family: "Roboto", "Sans Serif";
       font-weight: normal;
     }
@@ -123,38 +188,37 @@
       font-family: "Roboto", "Sans Serif";
     }
 
+    .p-localisation
+    {
+      font-size: map-get($font-size-p-localisation , "mobile" );
+    }
+
+    .p-fonctionnement
+    {
+      font-size: map-get($font-size-p-fonctionnement , "mobile" );
+    }
+
     a
     {
       font-size: map-get($font-size-a,"mobile" );
       font-family: "Roboto", "Sans Serif";
     }
 
+    .fonctionnement__etapes__etape__numero
+    {
+      font-size: map-get($font-size-numero,"mobile" );
+      color: white;
+    }
+  
+    .p-restaurant
+    {
+      font-size: map-get($font-size-restaurant-p , "mobile");
+      font-weight: lighter;
+    }
 
-  }
+    .footer-a
+    {
+      font-size: map-get($font-size-footer-a , "mobile");
+    }
 
-  @include tablet-only 
-  {
-    h1
-    {
-      font-size: map-get($font-size-h1, "tablet" );
-    }
-  
-    h2
-    {
-      font-size: map-get($font-size-h2, "tablet" );
-    }
-  
-    h3 
-    {
-      font-size: map-get($font-size-h3, "tablet" );
-      font-family: "Roboto", "Sans Serif";
-      font-weight: bold;
-    }
-  
-    p 
-    {
-      font-size: map-get($font-size-p,"tablet" );
-      font-family: "Roboto", "Sans Serif";
-      color: $color-location;
-    }
   }

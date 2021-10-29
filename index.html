@@ -18,7 +18,7 @@
         <article class="presentation">
             <section class="presentation__localisation">
                 <i class="fas fa-map-marker-alt"></i>
-                <p class="p">Paris, Belleville</p>
+                <p class="p-localisation">Paris, Belleville</p>
             </section>
             <section class="presentation__main">
                 <h1>Réservez le menu qui vous convient</h1>
@@ -28,20 +28,22 @@
         </article>
         <article class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <section class="fonctionnement__etape">
-                <p class="fonctionnement__etape__numero">1</p>
-                <i class="fas fa-mobile-alt fa-lg"></i>
-                <p>Choisissez un restaurant</p> 
-            </section>
-            <section class="fonctionnement__etape">
-                <p class="fonctionnement__etape__numero">2</p>
-                <i class="fas fa-list-ul"></i>
-                <p>Composez votre menu</p> 
-            </section>
-            <section class="fonctionnement__etape">
-                <p class="fonctionnement__etape__numero">3</p>
-                <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p> 
+            <section class="fonctionnement__etapes">
+                <section class="fonctionnement__etapes__etape">
+                    <p class="fonctionnement__etapes__etape__numero">1</p>
+                    <i class="fas fa-mobile-alt fa-lg"></i>
+                    <p class="p-fonctionnement">Choisissez un restaurant</p> 
+                </section>
+                <section class="fonctionnement__etapes__etape">
+                    <p class="fonctionnement__etapes__etape__numero">2</p>
+                    <i class="fas fa-list-ul"></i>
+                    <p class="p-fonctionnement">Composez votre menu</p> 
+                </section>
+                <section class="fonctionnement__etapes__etape">
+                    <p class="fonctionnement__etapes__etape__numero">3</p>
+                    <i class="fas fa-store"></i>
+                    <p class="p-fonctionnement">Dégustez au restaurant</p> 
+                </section>
             </section>
         </article>
         <article class="restaurants">
@@ -111,16 +113,20 @@
     <footer class="footer">
         <h3>Ohmyfood</h3>
         <article class="footer__liens">
-                <div class="footer__liens__lien">
-                    <a class="footer__liens__lien__i" href=""><i class="fas fa-utensils fa-xs"></i></a>
-                    <a href="">Proposer un restaurant</a href="">
+                <div class="footer__part1">
+                    <div class="footer__liens__lien">
+                        <a class="footer__liens__lien__i" href=""><i class="fas fa-utensils fa-xs"></i></a>
+                        <a class="footer-a" href="">Proposer un restaurant</a href="">
+                    </div>
+                    <div class="footer__liens__lien">
+                        <a class="footer__liens__lien__i" href=""><i class="fas fa-handshake fa-xs"></i></a>
+                        <a class="footer-a" href="">Devenir partenaire</a href="">
+                    </div>   
                 </div>
-                <div class="footer__liens__lien">
-                    <a class="footer__liens__lien__i" href=""><i class="fas fa-handshake fa-xs"></i></a>
-                    <a href="">Devenir partenaire</a href="">
-                </div>           
-                <a class="footer__liens__lien">Mentions légales</a>
-                <a class="footer__liens__lien">Contact</a>
+                <div class="footer__part2">
+                    <a class="footer__liens__lien footer-a">Mentions légales</a>
+                    <a class="footer__liens__lien footer-a">Contact</a>
+                </div>
         </article>
     </footer>
 </body>

@@ -2,18 +2,57 @@
 {
     @include paddingSection;
     background-color: $color-bg-primary;
-    padding: 50px 5%;
+    padding: 60px 5%;
+
+    @include tablet-only
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include pc-only
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     h2
     {
-        margin-bottom: 20px;
+        margin-bottom: 3vw;
+
+        @include tablet-only
+        {
+            margin-bottom: 8vw;
+        }
+    }
+
+    a
+    {
+        text-decoration: none;
     }
 
     &__cards
     {
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 20px 0;
+        width: 100%;
+
+        @include tablet-only
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @include pc-only
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
         &__card
         {
@@ -26,6 +65,16 @@
             margin-right: 5px;
             margin-left: 5px;
             background-color: white;
+
+            @include tablet-only
+            {
+                width: 47%;
+            }
+
+            @include pc-only
+            {
+                width: 20%;
+            }
 
             &__imgContainer
             {
@@ -67,10 +116,16 @@
                 h4
                 {
                     margin-bottom: 5px;
+                    font-weight: bold;
                 }
 
+                &__right
+                {
+
+                }
 
             }
         }
     }
 }
+
