@@ -1,6 +1,33 @@
 header {
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
     
+}
+
+.headerMenu
+{
+    text-align: center;
+    position: relative;
+    a
+    {
+        border: none;
+        background-color: white;
+        position: absolute;
+        left: 7%;
+        top: 28px;
+        i
+        {
+            color: black;
+        }
+    }
+
+    .carte__img 
+    {
+        img
+        {
+            width: 100%;
+        }
+        
+    }
 }

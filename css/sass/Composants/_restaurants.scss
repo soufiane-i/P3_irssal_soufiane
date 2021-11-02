@@ -119,8 +119,51 @@
                     font-weight: bold;
                 }
 
+                &__left
+                {
+                    width: 80%;
+                }
+
                 &__right
                 {
+            
+                    i
+                    {
+                        width: 30px;
+                    }
+                    .far
+                    {
+                        display: inline-block
+                        
+                    }
+
+                    .fas
+                    {
+                        display: none;
+                    }
+                    &:hover, &:active 
+                    {
+                        .far
+                        {
+                            display: none;
+                        }
+
+                        .fas
+                        {
+                            display: inline-block;
+                            width: 30px;
+                        }
+                        
+                        .fas::before 
+                        {
+                            color: transparent;
+                            position: relative;
+                            background-clip: text;
+                            background-image: linear-gradient(to top, $color-secondary, $color-primary);
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
 
                 }
 

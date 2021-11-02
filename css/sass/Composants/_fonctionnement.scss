@@ -106,7 +106,17 @@
                     height: 35px;
                     left: -1vw;
                 }
+
+
         
+            }
+
+            &:nth-child(3)
+            {
+                background-color: $color-bg-fonctionnement;
+                i {
+                 color: $color-primary;   
+                }
             }
     
             i

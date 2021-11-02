@@ -1,3 +1,5 @@
+//Acceuil
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
 
 *
@@ -14,7 +16,7 @@
 
   a:hover 
   {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   h1
@@ -222,3 +224,38 @@
     }
 
   }
+
+
+
+
+
+//Menu
+
+.h1Menu
+{
+    font-size: map-get($font-size-h1Menu , "mobile");
+    font-family: "Shrikhand", "Sans-Serif";
+    font-weight: normal;
+}
+
+.h2Menu
+{
+  font-weight: lighter;
+  font-size: map-get($font-size-h2Menu , "mobile");
+}
+
+.h3Menu
+{
+  font-size: map-get($font-size-h3Menu , "mobile");
+}
+
+.pMenu
+{
+  font-size: map-get($font-size-pMenu , "mobile");
+  font-weight: lighter;
+}
+
+.prixMenu
+{
+  font-size: map-get($font-size-prixMenu , "mobile");
+}
