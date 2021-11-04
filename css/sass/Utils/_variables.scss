@@ -23,14 +23,16 @@ $font-size-restaurant-p : ("mobile": 1rem, "tablet": 1.2rem, "pc": 1rem);
 $font-size-a : ("mobile": 1.1rem, "tablet": 1.3rem, "pc": 1.3rem);
 $font-size-footer-a : ("mobile": 0.9rem, "tablet": 1rem, "pc": 1rem);
 $font-size-numero : ("mobile": 0.9rem, "tablet": 1rem, "pc": 1rem);
+$font-size-button : ("mobile": 1.1rem, "tablet": 1.5rem, "pc": 1.5rem);
+
 
 
 //menu
-$font-size-h1Menu : ("mobile": 1.8rem, "tablet": 2.1rem, "pc": 3rem);
+$font-size-h1Menu : ("mobile": 1.8rem, "tablet": 2.5rem, "pc": 3rem);
 $font-size-h2Menu : ("mobile": 1rem, "tablet": 2rem, "pc": 2.4rem);
-$font-size-h3Menu : ("mobile": 1.2rem, "tablet": 1.8rem, "pc": 1.8rem);
-$font-size-pMenu : ("mobile": 1rem, "tablet": 1.8rem, "pc": 1.8rem);
-$font-size-prixMenu : ("mobile": 0.9rem, "tablet": 1.8rem, "pc": 1.8rem);
+$font-size-h3Menu : ("mobile": 1.2rem, "tablet": 2rem, "pc": 1.8rem);
+$font-size-pMenu : ("mobile": 1rem, "tablet": 1.6rem, "pc": 1.8rem);
+$font-size-prixMenu : ("mobile": 1rem, "tablet": 1.8rem, "pc": 1.8rem);
 
 
 //Menu Animation Apparition Carte
@@ -44,5 +46,4 @@ $anim-delay: $anim-dur / 5;
 $breakpoints: (
     mobile: 768px,
     tablet: 992px,
-    pc:1025px
 );

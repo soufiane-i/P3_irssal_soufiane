@@ -1,7 +1,20 @@
 header {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
+
+    @include mobile-only
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    @include tablet-only
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
     
 }
 
@@ -9,6 +22,22 @@ header {
 {
     text-align: center;
     position: relative;
+
+    &__arrow
+    {
+        display: none;
+
+        @include tablet-only
+        {
+            display: block;
+        }
+
+        @include mobile
+        {
+            display: block;
+        }
+    }
+
     a
     {
         border: none;

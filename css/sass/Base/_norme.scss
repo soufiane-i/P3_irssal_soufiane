@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     margin: 0;
 }
+
   
   a
   {
@@ -83,6 +84,43 @@
   {
     font-size: map-get($font-size-footer-a , "pc");
   }
+
+      //Menu
+
+      .h1Menu
+      {
+          font-size: map-get($font-size-h1Menu , "pc");
+          font-family: "Shrikhand", "Sans-Serif";
+          font-weight: normal;
+      }
+    
+      .h2Menu
+      {
+        font-weight: lighter;
+        font-size: map-get($font-size-h2Menu , "pc");
+        text-transform: uppercase;
+      }
+    
+      .h3Menu
+      {
+        font-size: map-get($font-size-h3Menu , "pc");
+      }
+    
+      .pMenu
+      {
+        font-size: map-get($font-size-pMenu , "pc");
+        font-weight: lighter;
+      }
+    
+      .prixMenu
+      {
+        font-size: map-get($font-size-prixMenu , "pc");
+      }
+
+      .button
+      {
+        font-size: map-get($font-size-button , "pc");
+      }
   
 
 
@@ -153,6 +191,42 @@
     {
       font-size: map-get($font-size-footer-a , "tablet");
     }
+
+    .button
+    {
+      font-size: map-get($font-size-button , "tablet");
+    }
+
+        //Menu
+
+  .h1Menu
+  {
+      font-size: map-get($font-size-h1Menu , "tablet");
+      font-family: "Shrikhand", "Sans-Serif";
+      font-weight: normal;
+  }
+
+  .h2Menu
+  {
+    font-weight: lighter;
+    font-size: map-get($font-size-h2Menu , "tablet");
+  }
+
+  .h3Menu
+  {
+    font-size: map-get($font-size-h3Menu , "tablet");
+  }
+
+  .pMenu
+  {
+    font-size: map-get($font-size-pMenu , "tablet");
+    font-weight: lighter;
+  }
+
+  .prixMenu
+  {
+    font-size: map-get($font-size-prixMenu , "tablet");
+  }
   }
 
 
@@ -223,39 +297,48 @@
       font-size: map-get($font-size-footer-a , "mobile");
     }
 
+    .button
+    {
+      font-size: map-get($font-size-button , "mobile");
+    }
+
+
+    //Menu
+
+  .h1Menu
+  {
+      font-size: map-get($font-size-h1Menu , "mobile");
+      font-family: "Shrikhand", "Sans-Serif";
+      font-weight: normal;
   }
 
+  .h2Menu
+  {
+    font-weight: lighter;
+    font-size: map-get($font-size-h2Menu , "mobile");
+  }
 
+  .h3Menu
+  {
+    font-size: map-get($font-size-h3Menu , "mobile");
+  }
 
+  .pMenu
+  {
+    font-size: map-get($font-size-pMenu , "mobile");
+    font-weight: lighter;
+  }
 
+  .prixMenu
+  {
+    font-size: map-get($font-size-prixMenu , "mobile");
+  }
 
-//Menu
-
-.h1Menu
-{
-    font-size: map-get($font-size-h1Menu , "mobile");
-    font-family: "Shrikhand", "Sans-Serif";
-    font-weight: normal;
 }
 
-.h2Menu
-{
-  font-weight: lighter;
-  font-size: map-get($font-size-h2Menu , "mobile");
-}
 
-.h3Menu
-{
-  font-size: map-get($font-size-h3Menu , "mobile");
-}
 
-.pMenu
-{
-  font-size: map-get($font-size-pMenu , "mobile");
-  font-weight: lighter;
-}
 
-.prixMenu
-{
-  font-size: map-get($font-size-prixMenu , "mobile");
-}
+
+
+

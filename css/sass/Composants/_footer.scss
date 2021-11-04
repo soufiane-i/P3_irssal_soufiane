@@ -54,7 +54,7 @@
 
                 &__i
                 {
-                    width: 5%;
+                    width: 1%;
                     margin-right: 1vw;
 
                     @include tablet-only
@@ -62,9 +62,9 @@
                         width: 2vw;
                     }
 
-                    @include pc-only
+                    @include mobile-only
                     {
-                        width: 0.5vw;
+                        width: 5%;
                     }
                 }
              
@@ -85,10 +85,5 @@
         }
     
 
-    
-}
-
-.footerMenu
-{
     
 }

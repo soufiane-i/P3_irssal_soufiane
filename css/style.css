@@ -67,6 +67,35 @@ a {
   font-size: 1rem;
 }
 
+.h1Menu {
+  font-size: 3rem;
+  font-family: "Shrikhand", "Sans-Serif";
+  font-weight: normal;
+}
+
+.h2Menu {
+  font-weight: lighter;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.h3Menu {
+  font-size: 1.8rem;
+}
+
+.pMenu {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.prixMenu {
+  font-size: 1.8rem;
+}
+
+.button {
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
     font-size: 2.1rem;
@@ -110,6 +139,28 @@ a {
   }
   .footer-a {
     font-size: 1rem;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
+  .h1Menu {
+    font-size: 2.5rem;
+    font-family: "Shrikhand", "Sans-Serif";
+    font-weight: normal;
+  }
+  .h2Menu {
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  .h3Menu {
+    font-size: 2rem;
+  }
+  .pMenu {
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+  .prixMenu {
+    font-size: 1.8rem;
   }
 }
 
@@ -157,30 +208,28 @@ a {
   .footer-a {
     font-size: 0.9rem;
   }
-}
-
-.h1Menu {
-  font-size: 1.8rem;
-  font-family: "Shrikhand", "Sans-Serif";
-  font-weight: normal;
-}
-
-.h2Menu {
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-.h3Menu {
-  font-size: 1.2rem;
-}
-
-.pMenu {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-.prixMenu {
-  font-size: 0.9rem;
+  .button {
+    font-size: 1.1rem;
+  }
+  .h1Menu {
+    font-size: 1.8rem;
+    font-family: "Shrikhand", "Sans-Serif";
+    font-weight: normal;
+  }
+  .h2Menu {
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  .h3Menu {
+    font-size: 1.2rem;
+  }
+  .pMenu {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .prixMenu {
+    font-size: 1rem;
+  }
 }
 
 header {
@@ -192,6 +241,16 @@ header {
 .headerMenu {
   text-align: center;
   position: relative;
+}
+
+.headerMenu__arrow {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .headerMenu__arrow {
+    display: block;
+  }
 }
 
 .headerMenu a {
@@ -214,7 +273,7 @@ header {
   color: white;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 15px 25px 15px 25px;
+  padding: 20px 70px;
   border-radius: 50px;
   border: none;
   -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
@@ -222,6 +281,18 @@ header {
   cursor: pointer;
   font-family: "Roboto", "Sans Serif";
   font-weight: normal;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .button__main {
+    padding: 2.5vw 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button__main {
+    padding: 4vw 13vw;
+  }
 }
 
 .presentation {
@@ -234,7 +305,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .presentation {
     margin-bottom: 3vw;
   }
@@ -273,7 +344,7 @@ header {
   text-align: center;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .presentation__main {
     padding-bottom: 120px;
   }
@@ -295,7 +366,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .presentation__main h1 {
     margin-right: 2%;
     margin-left: 2%;
@@ -318,7 +389,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .presentation__main p {
     margin-bottom: 6vw;
   }
@@ -348,7 +419,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,7 +444,7 @@ header {
   margin-bottom: 8vw;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .fonctionnement h2 {
     margin-bottom: 3vw;
   }
@@ -404,7 +475,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .fonctionnement__etapes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -443,7 +514,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .fonctionnement__etapes__etape {
     width: 28%;
   }
@@ -476,7 +547,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .fonctionnement__etapes__etape__numero {
     width: 35px;
     height: 35px;
@@ -524,7 +595,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -579,7 +650,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .restaurants__cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -617,7 +688,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .restaurants__cards__card {
     width: 20%;
   }
@@ -704,19 +775,47 @@ header {
   text-align: center;
 }
 
+.imageHead {
+  height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .imageHead {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageHead {
+    height: 34vh;
+  }
+}
+
 .carte {
   background-color: #f6f6f6;
   position: relative;
-  width: 100%;
+  width: 60%;
   padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 .carte a {
   color: black;
 }
 
-.carte__img img {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .carte {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte {
+    width: 100%;
+  }
 }
 
 .carte__head {
@@ -731,11 +830,49 @@ header {
           justify-content: space-between;
   padding: 2vw 5%;
   position: absolute;
-  top: -15vw;
+  top: -27vh;
   background-color: #f6f6f6;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  margin: 3.5vw 0%;
+  padding-bottom: 80px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__head {
+    top: -150px;
+    padding: 3.5vw 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__head {
+    top: -3%;
+    padding: 2vw 5%;
+  }
+}
+
+.carte__head__heart {
+  height: 100%;
+  width: 5%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__head__heart {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__head__heart {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-right: 20px;
+  }
 }
 
 .carte__head__heart i {
@@ -756,7 +893,6 @@ header {
 
 .carte__head__heart:hover .fas, .carte__head__heart:active .fas {
   display: inline-block;
-  width: 30px;
 }
 
 .carte__head__heart:hover .fas::before, .carte__head__heart:active .fas::before {
@@ -765,23 +901,59 @@ header {
   background-clip: text;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
-  width: 100%;
   text-align: center;
+}
+
+@media screen and (min-width: null) {
+  .carte__head__heart:hover .fas::before, .carte__head__heart:active .fas::before {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .carte__partie {
   padding: 2vw 5%;
   margin-bottom: 30px;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__partie {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie {
+    margin-bottom: 30px;
+  }
 }
 
 .carte__partie:nth-child(2) {
-  padding-top: 10vw;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__partie:nth-child(2) {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie:nth-child(2) {
+    padding-top: 70px;
+  }
 }
 
 .carte__partie h2 {
   position: relative;
   margin-bottom: 25px;
-  text-transform: capitalize;
+}
+
+@media screen and (min-width: null) {
+  .carte__partie h2 {
+    margin-bottom: 40px;
+  }
 }
 
 .carte__partie h2::before {
@@ -794,21 +966,33 @@ header {
 }
 
 .carte__partie__cards__card {
+  height: 130px;
   background-color: white;
   -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 3vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   opacity: 0;
   -webkit-animation: CardLoadingAnim forwards 0.5s ease-in-out;
           animation: CardLoadingAnim forwards 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__partie__cards__card {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie__cards__card {
+    height: 75px;
+  }
 }
 
 .carte__partie__cards__card:nth-child(1) {
@@ -853,28 +1037,59 @@ header {
 }
 
 .carte__partie__cards__card:hover .carte__partie__cards__card__right__check {
-  width: 60px;
+  width: 8vw;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie__cards__card:hover .carte__partie__cards__card__right__check {
+    width: 16vw;
+  }
 }
 
 .carte__partie__cards__card:hover .carte__partie__cards__card__right__check i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(0deg) scale(1.5);
+          transform: rotate(0deg) scale(1.5);
   opacity: 1;
-  -webkit-transition: opacity 0s ease, -webkit-transform 0.5s ease-in-out;
-  transition: opacity 0s ease, -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0s ease;
-  transition: transform 0.5s ease-in-out, opacity 0s ease, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie__cards__card:hover .carte__partie__cards__card__right__check i {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+}
+
+@media screen and (min-width: null) {
+  .carte__partie__cards__card:hover .carte__partie__cards__card__right__check i {
+    -webkit-transform: rotate(0deg) scale(2);
+            transform: rotate(0deg) scale(2);
+  }
 }
 
 .carte__partie__cards__card__left {
   padding-left: 3%;
   white-space: nowrap;
   overflow: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carte__partie__cards__card__left .h3Menu {
@@ -895,17 +1110,33 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 100%;
 }
 
 .carte__partie__cards__card__right .prixMenu {
-  margin-right: 15px;
+  padding-right: 4vw;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carte__partie__cards__card__right .prixMenu {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte__partie__cards__card__right .prixMenu {
+    padding-bottom: 13px;
+  }
 }
 
 .carte__partie__cards__card__right__check {
-  height: 160%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,10 +1147,12 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #99E2D0;
-  width: 60px;
+  width: 10%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .carte__partie__cards__card__right__check i {
@@ -930,21 +1163,25 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  -webkit-transform: rotate(-220deg);
-          transform: rotate(-220deg);
-  height: 25px;
+  -webkit-transform: rotate(-220deg) scale(1);
+          transform: rotate(-220deg) scale(1);
+  height: 100%;
   opacity: 0;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: null) {
+  .carte__partie__cards__card__right__check i {
+    -webkit-transform: rotate(-220deg) scale(1.5);
+            transform: rotate(-220deg) scale(1.5);
+  }
 }
 
 .carte .button {
   width: 100%;
   text-align: center;
-}
-
-.carte .button__main {
-  padding-left: 12%;
-  padding-right: 12%;
 }
 
 .imageHead img {
@@ -969,7 +1206,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .footer h3 {
     margin-bottom: 20px;
   }
@@ -979,7 +1216,7 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .footer__liens {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1009,7 +1246,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: null) {
   .footer__liens__lien {
     margin-right: 20%;
     margin-bottom: 40px;
@@ -1017,7 +1254,7 @@ header {
 }
 
 .footer__liens__lien__i {
-  width: 5%;
+  width: 1%;
   margin-right: 1vw;
 }
 
@@ -1027,9 +1264,9 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 768px) {
   .footer__liens__lien__i {
-    width: 0.5vw;
+    width: 5%;
   }
 }
 

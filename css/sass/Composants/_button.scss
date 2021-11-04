@@ -2,11 +2,23 @@
 {
     color: white;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    padding: 15px 25px 15px 25px;
+    padding: 20px 70px;
     border-radius: 50px;
     border: none;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
+
+    @include tablet-only
+    {
+        padding: 2.5vw 8vw;
+    }
+
+    @include mobile-only
+    {
+        padding: 4vw 13vw;
+    }
+
+
 }
