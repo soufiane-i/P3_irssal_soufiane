@@ -26,17 +26,21 @@ $font-size-numero : ("mobile": 0.9rem, "tablet": 1rem, "pc": 1rem);
 
 
 //menu
-$font-size-h1Menu : ("mobile": 1.6rem, "tablet": 2.1rem, "pc": 3rem);
+$font-size-h1Menu : ("mobile": 1.8rem, "tablet": 2.1rem, "pc": 3rem);
 $font-size-h2Menu : ("mobile": 1rem, "tablet": 2rem, "pc": 2.4rem);
-$font-size-h3Menu : ("mobile": 1rem, "tablet": 1.8rem, "pc": 1.8rem);
-$font-size-pMenu : ("mobile": 0.9rem, "tablet": 1.8rem, "pc": 1.8rem);
+$font-size-h3Menu : ("mobile": 1.2rem, "tablet": 1.8rem, "pc": 1.8rem);
+$font-size-pMenu : ("mobile": 1rem, "tablet": 1.8rem, "pc": 1.8rem);
 $font-size-prixMenu : ("mobile": 0.9rem, "tablet": 1.8rem, "pc": 1.8rem);
 
 
+//Menu Animation Apparition Carte
+$anim-dur: 1s;
+$anim-delay: $anim-dur / 5;
 
 
 
 
+//Breakpoints
 $breakpoints: (
     mobile: 768px,
     tablet: 992px,
