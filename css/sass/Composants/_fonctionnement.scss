@@ -2,6 +2,11 @@
 {
     @include paddingSection;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
     
     @include tablet-only
     {
@@ -13,47 +18,49 @@
     }
 
 
-    @include pc-only
+    @include mobile-only
     {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 4vw;
-        flex-wrap: wrap;
+
     }
     
 
     h2
     {
-        margin-bottom: 8vw;
+        margin-bottom: 3vw;
+        text-align: center;
 
-        @include pc-only
+        @include tablet-only
         {
-            margin-bottom: 3vw;
+            margin-bottom: 8vw;
+        }
+
+        @include mobile-only
+        {
+            margin-bottom: 8vw;
+            text-align: left;
         }
     }
 
     &__etapes
     {
 
+
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
 
         @include tablet-only
         {
-            display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            width: 90%;
+            width: 100%;
         }
 
-        @include pc-only
+        @include mobile-only
         {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 90%;
+            flex-direction: column;
         }
         
         &__etape
@@ -67,30 +74,31 @@
             border-radius: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             position: relative;
+            width: 28%;
 
     
             @include tablet-only
             {
-                width: 60%;
+                width: 55%;
             }
     
-            @include pc-only
+            @include mobile-only
             {
-                width: 28%;
+                width: 100%;
             }
     
             &__numero
             {
                 background-color: $color-primary;
                 border-radius: 50px;
-                width: 25px;
-                height: 25px;
+                width: 35px;
+                height: 35px;
                 color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                left: -3vw;
+                left: -1vw;
     
                 @include tablet-only
                 {
@@ -100,11 +108,11 @@
                 }
     
                 
-                @include pc-only
+                @include mobile-only
                 {
-                    width: 35px;
-                    height: 35px;
-                    left: -1vw;
+                    width: 25px;
+                    height: 25px;
+                    left: -3vw;
                 }
 
 

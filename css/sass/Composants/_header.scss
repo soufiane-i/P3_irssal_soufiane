@@ -32,7 +32,7 @@ header {
             display: block;
         }
 
-        @include mobile
+        @include mobile-only
         {
             display: block;
         }

@@ -7,7 +7,7 @@
         margin-bottom: 6vw;
     }
 
-    @include pc-only
+    @include mobile-only
     {
         margin-bottom: 3vw;
     }
@@ -76,7 +76,7 @@
         p 
         {
             font-weight: lighter;
-            margin-bottom: 10vw;
+            margin-bottom: 6vw;
             width: 100%;
 
             @include tablet-only
@@ -84,9 +84,9 @@
                 margin-bottom: 13vw;
             }
 
-            @include pc-only
+            @include mobile-only
             {
-                margin-bottom: 6vw;
+                margin-bottom: 10vw;
             }
         }
     }

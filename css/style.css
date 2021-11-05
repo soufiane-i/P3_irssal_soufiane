@@ -233,9 +233,23 @@ a {
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 .headerMenu {
@@ -248,6 +262,12 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .headerMenu__arrow {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .headerMenu__arrow {
     display: block;
   }
@@ -305,7 +325,7 @@ header {
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .presentation {
     margin-bottom: 3vw;
   }
@@ -379,7 +399,7 @@ header {
 
 .presentation__main p {
   font-weight: lighter;
-  margin-bottom: 10vw;
+  margin-bottom: 6vw;
   width: 100%;
 }
 
@@ -389,68 +409,15 @@ header {
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .presentation__main p {
-    margin-bottom: 6vw;
+    margin-bottom: 10vw;
   }
 }
 
 .fonctionnement {
   padding: 0 5%;
   margin-bottom: 50px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 6vw;
-  }
-}
-
-@media screen and (min-width: null) {
-  .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 4vw;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.fonctionnement h2 {
-  margin-bottom: 8vw;
-}
-
-@media screen and (min-width: null) {
-  .fonctionnement h2 {
-    margin-bottom: 3vw;
-  }
-}
-
-.fonctionnement__etapes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,36 +425,86 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 6vw;
+  }
+}
+
+.fonctionnement h2 {
+  margin-bottom: 3vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement h2 {
+    margin-bottom: 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fonctionnement h2 {
+    margin-bottom: 8vw;
+    text-align: left;
+  }
+}
+
+.fonctionnement__etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .fonctionnement__etapes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90%;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .fonctionnement__etapes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 90%;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -506,25 +523,26 @@ header {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
+  width: 28%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .fonctionnement__etapes__etape {
-    width: 60%;
+    width: 55%;
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .fonctionnement__etapes__etape {
-    width: 28%;
+    width: 100%;
   }
 }
 
 .fonctionnement__etapes__etape__numero {
   background-color: #9356DC;
   border-radius: 50px;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,7 +554,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  left: -3vw;
+  left: -1vw;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -547,11 +565,11 @@ header {
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .fonctionnement__etapes__etape__numero {
-    width: 35px;
-    height: 35px;
-    left: -1vw;
+    width: 25px;
+    height: 25px;
+    left: -3vw;
   }
 }
 
@@ -578,24 +596,19 @@ header {
   padding: 0 5%;
   background-color: #f6f6f6;
   padding: 60px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: null) {
   .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,12 +624,18 @@ header {
 }
 
 .restaurants h2 {
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .restaurants h2 {
     margin-bottom: 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .restaurants h2 {
+    margin-bottom: 3vw;
   }
 }
 
@@ -628,12 +647,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px 0;
-  width: 100%;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -650,17 +672,17 @@ header {
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .restaurants__cards {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
   }
 }
 
@@ -676,10 +698,11 @@ header {
   -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 60px;
   margin-right: 5px;
   margin-left: 5px;
   background-color: white;
+  width: 40%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -688,9 +711,9 @@ header {
   }
 }
 
-@media screen and (min-width: null) {
+@media screen and (max-width: 768px) {
   .restaurants__cards__card {
-    width: 20%;
+    width: 100%;
   }
 }
 
