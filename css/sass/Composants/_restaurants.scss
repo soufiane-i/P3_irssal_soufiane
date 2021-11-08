@@ -118,7 +118,6 @@
 
             &__descriptionContainer
             {
-                padding: 15px 5%;
                 color: black;
                 display: flex;
                 justify-content: space-between;
@@ -132,49 +131,90 @@
 
                 &__left
                 {
-                    width: 80%;
+                    width: 85%;
+                    padding: 15px 5%;
                 }
 
                 &__right
                 {
+                    width: 15%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
             
                     i
                     {
                         width: 30px;
+                        height: 30px;
+
+                        &:hover, &:active 
+                        {
+    
+                            .fas
+                            {
+    
+                                animation: heartOpacityPC 0.3s forwards ease;
+    
+                                @include mobile-only
+                                {
+                                    animation: heartOpacityMobile 0.3s forwards ease;
+                                }
+    
+                            }
+    
+                            .fas::before 
+                            {
+                                color: transparent;
+                                position: relative;
+                                background-clip: text;
+                                background-image: linear-gradient(to top, $color-secondary, $color-primary);
+                                text-align: center;
+                                transform-origin: bottom;
+                                transition: all 1s ease-in-out;
+                            }
+                            
+                        }
                     }
                     .far
                     {
-                        display: inline-block
-                        
+                        display: inline-block;
+                        transform: scale(1);
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        overflow: hidden;
                     }
+
+                    
 
                     .fas
                     {
-                        display: none;
-                    }
-                    &:hover, &:active 
-                    {
-                        .far
-                        {
-                            display: none;
-                        }
-
-                        .fas
-                        {
-                            display: inline-block;
-                            width: 30px;
-                        }
+                        position: absolute;
+                        transform: scale(0.6) scaleX(1.05) scaleY(0) translateY(-9px) translateX(-3px);
+                        transform-origin: bottom;
+                        top: 0px;
+                        left: 0px;
+                        opacity: 0;
+                        z-index: -1;
                         
-                        .fas::before 
-                        {
-                            color: transparent;
-                            position: relative;
-                            background-clip: text;
-                            background-image: linear-gradient(to top, $color-secondary, $color-primary);
-                            width: 100%;
-                            text-align: center;
-                        }
                     }
+
+                    .fas::before 
+                    {
+                        color: transparent;
+                        position: relative;
+                        background-clip: text;
+                        background-image: linear-gradient(to top, $color-secondary, $color-primary);
+                        transform-origin: bottom;
+                        
+                    }
+
+
+
 
                 }
 
@@ -182,4 +222,60 @@
         }
     }
 }
+
+
+
+
+@keyframes heartOpacityPC {
+
+
+    0%
+    {
+        opacity: 0;
+        transform: scale(0.6) scaleY(0) scaleX(1.05) translateY(-20%) translateX(-5%);
+    }
+
+
+    20%
+    {
+        opacity: 0.1;
+        transform: scale(0.6) scaleY(0) scaleX(0.2) translateY(-20%) translateX(-5%);
+
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: scale(0.6) scaleY(1.1) scaleX(1.1) translateY(-20%) translateX(-8%);
+
+    }
+    
+}
+
+@keyframes heartOpacityMobile {
+
+
+    0%
+    {
+        opacity: 0;
+        transform: scale(0.6) scaleY(0) scaleX(1.05) translateY(-15%) translateX(1%);
+    }
+
+
+    20%
+    {
+        opacity: 0.1;
+        transform: scale(0.6) scaleY(0) scaleX(0.2) translateY(-15%) translateX(1%);
+
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: scale(0.6) scaleY(1.1) scaleX(1.1) translateY(-15%) translateX(1%);
+
+    }
+    
+}
+
 

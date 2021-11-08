@@ -67,7 +67,7 @@
         {
             display: flex;
             align-items: center;
-            background-color: $color-bg-primary;
+            
             margin-bottom: 30px;
             padding: 28px 20px;
             margin-left: 10px;
@@ -75,6 +75,15 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             position: relative;
             width: 28%;
+
+            &:hover
+            {
+                cursor: pointer;
+                background-color: $color-bg-fonctionnement;
+                i {
+                 color: $color-primary;   
+                }
+            }
 
     
             @include tablet-only
@@ -119,13 +128,6 @@
         
             }
 
-            &:nth-child(3)
-            {
-                background-color: $color-bg-fonctionnement;
-                i {
-                 color: $color-primary;   
-                }
-            }
     
             i
             {

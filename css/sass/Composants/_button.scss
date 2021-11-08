@@ -9,6 +9,7 @@
     cursor: pointer;
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
+    position: relative;
 
     @include tablet-only
     {
@@ -20,5 +21,29 @@
         padding: 4vw 13vw;
     }
 
+    &__opacity
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        background-color: white;
+        opacity: 0;
+        
+    }
+
+
+    &:hover 
+    {
+
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+        & .button__main__opacity{
+            opacity: 0.1;
+        }
+        
+        
+    }
 
 }

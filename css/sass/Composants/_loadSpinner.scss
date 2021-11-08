@@ -1,0 +1,38 @@
+$cd-bars: #15DEA5;
+$size: 3vh;
+
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        
+        height: 100%;
+        width: $size;
+
+        &:nth-child(1)
+        {
+            background-color: $color-secondary;
+        }
+        &:nth-child(2)
+        {
+            background-color: $color-primary;
+        }
+        &:nth-child(3)
+        {
+            background-color: $color-tertiary;
+        }
+    }
+}
+
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+        
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
