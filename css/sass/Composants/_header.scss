@@ -1,25 +1,39 @@
+
 header {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    transform: scale(1.5);
 
+    img
+    {
+        transform: scale(1.5);
+    }
+
+    
     @include mobile-only
     {
         padding-top: 20px;
         padding-bottom: 10px;
-        transform: scale(1);
+        img
+        {
+            transform: scale(1);
+        }
     }
 
     @include tablet-only
     {
         padding-top: 25px;
         padding-bottom: 25px;
-        transform: scale(1);
+        img
+        {
+            transform: scale(1);
+        }
     }
 
     
 }
+
+
 
 .headerMenu
 {
