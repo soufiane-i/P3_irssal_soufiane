@@ -25,7 +25,7 @@
         i 
         {
             padding-right: 20px;
-            padding-left: 20px;
+            
         }
 
         .p-localisation
@@ -42,10 +42,6 @@
         padding-bottom: 80px;
         text-align: center;
 
-        @include pc-only
-        {
-            padding-bottom: 120px;
-        }
 
         h1
         {

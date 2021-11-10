@@ -375,10 +375,15 @@ a {
   }
 }
 
-.load {
+.load__div {
   position: fixed;
   z-index: 5;
-  width: 20vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.load {
+  width: 1%;
   height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +393,10 @@ a {
           justify-content: space-evenly;
   -webkit-animation: load 2.6s forwards;
           animation: load 2.6s forwards;
+  width: 180px;
+  -webkit-transform: translateY(42vh) translateX(0vw) scaleY(1);
+          transform: translateY(42vh) translateX(0vw) scaleY(1);
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -570,91 +579,91 @@ a {
 
 @-webkit-keyframes load {
   0% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(1);
-            transform: translateY(40vh) translateX(45vw) scaleY(1);
+    -webkit-transform: translateY(40vh) scaleY(1);
+            transform: translateY(40vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(1);
-            transform: translateY(40vh) translateX(45vw) scaleY(1);
+    -webkit-transform: translateY(40vh) scaleY(1);
+            transform: translateY(40vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(0);
-            transform: translateY(40vh) translateX(45vw) scaleY(0);
+    -webkit-transform: translateY(40vh) scaleY(0);
+            transform: translateY(40vh) scaleY(0);
   }
 }
 
 @keyframes load {
   0% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(1);
-            transform: translateY(40vh) translateX(45vw) scaleY(1);
+    -webkit-transform: translateY(40vh) scaleY(1);
+            transform: translateY(40vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(1);
-            transform: translateY(40vh) translateX(45vw) scaleY(1);
+    -webkit-transform: translateY(40vh) scaleY(1);
+            transform: translateY(40vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(40vh) translateX(45vw) scaleY(0);
-            transform: translateY(40vh) translateX(45vw) scaleY(0);
+    -webkit-transform: translateY(40vh) scaleY(0);
+            transform: translateY(40vh) scaleY(0);
   }
 }
 
 @-webkit-keyframes loadMobile {
   0% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(1);
-            transform: translateY(42vh) translateX(30vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(1);
-            transform: translateY(42vh) translateX(30vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(0);
-            transform: translateY(42vh) translateX(30vw) scaleY(0);
+    -webkit-transform: translateY(42vh) scaleY(0);
+            transform: translateY(42vh) scaleY(0);
   }
 }
 
 @keyframes loadMobile {
   0% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(1);
-            transform: translateY(42vh) translateX(30vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(1);
-            transform: translateY(42vh) translateX(30vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(42vh) translateX(30vw) scaleY(0);
-            transform: translateY(42vh) translateX(30vw) scaleY(0);
+    -webkit-transform: translateY(42vh) scaleY(0);
+            transform: translateY(42vh) scaleY(0);
   }
 }
 
 @-webkit-keyframes loadTablet {
   0% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(1);
-            transform: translateY(35vh) translateX(35vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(1);
-            transform: translateY(35vh) translateX(35vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(0);
-            transform: translateY(35vh) translateX(35vw) scaleY(0);
+    -webkit-transform: translateY(42vh) scaleY(0);
+            transform: translateY(42vh) scaleY(0);
   }
 }
 
 @keyframes loadTablet {
   0% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(1);
-            transform: translateY(35vh) translateX(35vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   99% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(1);
-            transform: translateY(35vh) translateX(35vw) scaleY(1);
+    -webkit-transform: translateY(42vh) scaleY(1);
+            transform: translateY(42vh) scaleY(1);
   }
   100% {
-    -webkit-transform: translateY(35vh) translateX(35vw) scaleY(0);
-            transform: translateY(35vh) translateX(35vw) scaleY(0);
+    -webkit-transform: translateY(42vh) scaleY(0);
+            transform: translateY(42vh) scaleY(0);
   }
 }
 
@@ -789,6 +798,7 @@ header img {
 
 @media screen and (max-width: 768px) {
   .button__main {
+    padding: 20px 30px;
     max-width: 250px;
   }
 }
@@ -852,7 +862,6 @@ header img {
 
 .presentation__localisation i {
   padding-right: 20px;
-  padding-left: 20px;
 }
 
 .presentation__localisation .p-localisation {
@@ -864,12 +873,6 @@ header img {
   padding: 20px 5%;
   padding-bottom: 80px;
   text-align: center;
-}
-
-@media screen and (min-width: null) {
-  .presentation__main {
-    padding-bottom: 120px;
-  }
 }
 
 .presentation__main h1 {
