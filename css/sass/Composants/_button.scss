@@ -2,7 +2,7 @@
 {
     color: white;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    padding: 20px 70px;
+    padding: 30px;
     border-radius: 50px;
     border: none;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
@@ -10,15 +10,39 @@
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
     position: relative;
+    
+   
+
+    a
+    {
+        width: 100%;
+        font-size: map-get($font-size-button, "pc");
+
+        @include tablet-only
+        {
+            font-size: map-get($font-size-button, "tablet");
+        }
+    
+        @include mobile-only
+        {
+            
+            font-size: map-get($font-size-button, "mobile");
+        }
+        
+       
+        
+    }
+    
 
     @include tablet-only
     {
-        padding: 2.5vw 8vw;
+        padding: 30px;
     }
 
     @include mobile-only
     {
-        padding: 4vw 13vw;
+        
+        max-width: 250px;
     }
 
     &__opacity
@@ -46,4 +70,9 @@
         
     }
 
+}
+
+.button__carte
+{
+    padding: 30px 10%;
 }

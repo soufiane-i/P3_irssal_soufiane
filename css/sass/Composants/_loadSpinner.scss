@@ -5,13 +5,23 @@ $num-bars: 3;
 
 .load {
     position: fixed;
-    transform: translateY(50vh) translateX(50vw);
     z-index: 5;
     width: $size*10;
     height: $size*7.5;
     display: flex;
     justify-content: space-evenly;
     animation: load 2.6s forwards;
+
+    @include mobile-only
+    {
+        
+        animation: loadMobile 2.6s forwards;
+    }
+
+    @include tablet-only
+    {
+        animation: loadTablet 2.6s forwards;
+    }
    
     
 
@@ -21,10 +31,16 @@ $num-bars: 3;
         top: 0;
         left: 0;
         width: 100%;
-        height: 240%;
+        height: 280%;
         background-color: white;
         z-index: 2;
         animation: bg 2.6s forwards;
+
+        @include mobile-only
+        {
+            height: 500%;
+        }
+
     }
     &__bar {
 
@@ -117,18 +133,49 @@ $num-bars: 3;
 
 @keyframes load {
     0% {
-        transform: translateY(40vh) translateX(43vw) scaleY(1);
+        transform: translateY(40vh) translateX(45vw) scaleY(1);
 
     }
 
     99%{
-        transform: translateY(40vh) translateX(43vw) scaleY(1);
+        transform: translateY(40vh) translateX(45vw) scaleY(1);
     }
 
     100% {
-        transform: translateY(40vh) translateX(43vw) scaleY(0);
+        transform: translateY(40vh) translateX(45vw) scaleY(0);
         
     }
 }
 
+@keyframes loadMobile {
+    0% {
+        transform: translateY(42vh) translateX(30vw) scaleY(1);
+
+    }
+
+    99%{
+        transform: translateY(42vh) translateX(30vw) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(42vh) translateX(30vw) scaleY(0);
+        
+    }
+}
+
+@keyframes loadTablet {
+    0% {
+        transform: translateY(35vh) translateX(35vw) scaleY(1);
+
+    }
+
+    99%{
+        transform: translateY(35vh) translateX(35vw) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(35vh) translateX(35vw) scaleY(0);
+        
+    }
+}
 

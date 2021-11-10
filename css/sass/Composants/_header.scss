@@ -39,24 +39,24 @@ header {
 {
     text-align: center;
     position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-only
+    {
+        height: 70px;
+    }
+
+    @include tablet-only
+    {
+        height: 90px;
+    }
 
     &__arrow
     {
         display: none;
-
-        @include tablet-only
-        {
-            display: block;
-        }
-
-        @include mobile-only
-        {
-            display: block;
-        }
-    }
-
-    a
-    {
         border: none;
         background-color: white;
         position: absolute;
@@ -66,14 +66,27 @@ header {
         {
             color: black;
         }
+        @include tablet-only
+        {
+            display: block;
+            top: 30px;
+
+        }
+
+        @include mobile-only
+        {
+            display: block;
+            top: 30px;
+        }
     }
 
-    .carte__img 
+    &__logo
     {
-        img
-        {
-            width: 100%;
-        }
-        
+        width: auto;
+    }
+
+    a
+    {
+
     }
 }

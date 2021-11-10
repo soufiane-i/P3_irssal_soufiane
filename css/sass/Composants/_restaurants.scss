@@ -31,6 +31,7 @@
         @include mobile-only
         {
             margin-bottom: 3vw;
+            width: 90%;
         }
     }
 
@@ -146,8 +147,13 @@
             
                     i
                     {
-                        width: 30px;
-                        height: 30px;
+                        width: 32px;
+                        height: 28px;
+
+                        @include tablet-only
+                        {
+                            width: 30px;
+                        }
 
                         &:hover, &:active 
                         {

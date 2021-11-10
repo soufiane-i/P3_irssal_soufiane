@@ -1,26 +1,30 @@
 .imageHead
 {
-    height: 50vh;
+    height: 66vh;
+    width: 100%;
     object-fit:contain;
     overflow: hidden;
 
+    img
+    {
+        width: 100%;
+    }
+
     @include tablet-only
     {
-        height: 40vh;
+        height: 40vw;
     }
 
     @include mobile-only
     {
-        height: 34vh;
+        
+        height: 65vw;
     }
 }
 
 .carte
 {
-    a
-    {
-        color: black;
-    }
+
 
     
     background-color: $color-bg-primary;
@@ -49,7 +53,7 @@
         justify-content: space-between;
         padding: 2vw 5%;
         position: absolute;
-        top: -27vh;
+        top: -25vh;
         background-color: $color-bg-primary;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
@@ -58,14 +62,14 @@
         
         @include tablet-only
         {
-            top: -150px;
+            top: -15vw;
             padding: 3.5vw 5%;
         }
 
         
         @include mobile-only
         {
-            top: -3%;
+            top: -50px;
             padding: 2vw 5%;
         }
         
@@ -75,18 +79,22 @@
          &__heart
         {
             height: 100%;
-            width: 5%;
+            
             transform: scale(2);
+            cursor: pointer;
 
             @include tablet-only
             {
                 transform: scale(1.8);
+                
             }
 
             @include mobile-only
             {
                 transform: scale(1);
                 margin-right: 20px;
+                width: 5%;
+
             }
 
             i
@@ -169,6 +177,7 @@
         @include tablet-only
         {
             margin-bottom: 80px;
+            padding-top: 0px;
         }
 
         @include mobile-only
@@ -177,7 +186,10 @@
         }
         
 
-
+        a
+        {
+            color: black;
+        }
 
         &:nth-child(2)
         {
@@ -271,7 +283,7 @@
                 {
                     .carte__partie__cards__card__right__check
                     {
-                        width: 8vw;
+                        width: 100px;
                         
                         transition: 0.3s ease-in-out;
 
@@ -385,11 +397,6 @@
                             overflow: hidden;
                             transition: all 0.5s ease-in-out;
 
-                            @include pc-only
-                            {
-                                transform: rotate(-220deg) scale(1.5);
-
-                            }
                         }
                         
                     }

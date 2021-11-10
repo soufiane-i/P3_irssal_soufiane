@@ -28,6 +28,7 @@
     {
         margin-bottom: 3vw;
         text-align: center;
+        width: 90%;
 
         @include tablet-only
         {
@@ -36,7 +37,8 @@
 
         @include mobile-only
         {
-            margin-bottom: 8vw;
+            margin-bottom: 30px;
+            margin-top: 40px;
             text-align: left;
         }
     }
@@ -67,7 +69,7 @@
         {
             display: flex;
             align-items: center;
-            
+            background-color: $color-bg-primary;
             margin-bottom: 30px;
             padding: 28px 20px;
             margin-left: 10px;
@@ -131,9 +133,15 @@
     
             i
             {
-                width: 15%;
                 text-align: center;
                 color: gray;
+                width: 60px;
+
+                @include mobile-only
+                {
+                    width: 40px;
+
+                }
             }
     
             p:nth-child(3)
