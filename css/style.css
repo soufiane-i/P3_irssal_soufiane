@@ -859,6 +859,12 @@ header img {
   padding: 30px 10%;
 }
 
+@media screen and (max-width: 768px) {
+  .button__carte {
+    padding: 20px 15%;
+  }
+}
+
 .presentation {
   margin-bottom: 3vw;
 }

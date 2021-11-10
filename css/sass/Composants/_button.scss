@@ -75,4 +75,9 @@
 .button__carte
 {
     padding: 30px 10%;
+
+    @include mobile-only
+    {
+        padding: 20px 15%;
+    }
 }
