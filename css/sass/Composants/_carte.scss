@@ -310,8 +310,7 @@
 
                             }
 
-                            opacity: 1;
-                            transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out; 
+                            transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out; 
                         }
                     }
                 }
@@ -391,9 +390,8 @@
                             display: flex;
                             align-items: center;
                             color: white;
-                            transform: rotate(-220deg) scale(1);
+                            transform: rotate(-220deg) scale(0);
                             height: 100%;
-                            opacity: 0;
                             overflow: hidden;
                             transition: all 0.5s ease-in-out;
 
