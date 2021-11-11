@@ -58,15 +58,7 @@
                 margin-left: 5%;
             }
 
-            @include pc-only
-            {
-                margin-right: 2%;
-                margin-left: 2%;
-                padding: 80px 5%;
-                padding-bottom: 10px;
-                margin-top: 0;
-                margin-bottom: 20px;
-            }
+
         }
 
         p 

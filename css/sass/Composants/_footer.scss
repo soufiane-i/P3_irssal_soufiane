@@ -14,10 +14,7 @@
             margin-bottom: 20px;
         }
 
-        @include pc-only
-        {
-            margin-bottom: 20px;
-        }
+
     }
 
 
@@ -25,13 +22,7 @@
         {
             margin-bottom: 40px;
 
-            @include pc-only
-            {
-                display: flex;
-                justify-content: space-between;
-                width: 40%;
-                height: auto;
-            }
+
             
 
             &__lien
@@ -46,11 +37,7 @@
                     margin-bottom: 20px;
                 }
 
-                @include pc-only
-                {
-                    margin-right: 20%;
-                    margin-bottom: 40px;
-                }
+
 
                 &__i
                 {
