@@ -80,18 +80,18 @@
         {
             height: 100%;
             
-            transform: scale(2);
+            transform: scale(2) translateX(-1px);
             cursor: pointer;
 
             @include tablet-only
             {
-                transform: scale(1.8);
+                transform: scale(1.8) translateX(0px);
                 
             }
 
             @include mobile-only
             {
-                transform: scale(1);
+                transform: scale(1.2) translateX(0px);
                 margin-right: 20px;
                 width: 5%;
 
@@ -193,7 +193,7 @@
 
         &:nth-child(2)
         {
-            padding-top: 0;
+            padding-top: 30px;
             
 
             @include tablet-only

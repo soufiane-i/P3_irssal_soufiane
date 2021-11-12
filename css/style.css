@@ -1482,22 +1482,22 @@ header img {
 
 .carte__head__heart {
   height: 100%;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(2) translateX(-1px);
+          transform: scale(2) translateX(-1px);
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .carte__head__heart {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
+    -webkit-transform: scale(1.8) translateX(0px);
+            transform: scale(1.8) translateX(0px);
   }
 }
 
 @media screen and (max-width: 768px) {
   .carte__head__heart {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.2) translateX(0px);
+            transform: scale(1.2) translateX(0px);
     margin-right: 20px;
     width: 5%;
   }
@@ -1597,7 +1597,7 @@ header img {
 }
 
 .carte__partie:nth-child(2) {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
