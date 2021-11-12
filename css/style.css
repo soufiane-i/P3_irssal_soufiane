@@ -1576,7 +1576,6 @@ header img {
 .carte__partie {
   padding: 2vw 5%;
   margin-bottom: 30px;
-  padding-top: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1597,7 +1596,7 @@ header img {
 }
 
 .carte__partie:nth-child(2) {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
