@@ -69,16 +69,12 @@
     color: white;
   }
 
-  .p-restaurant
+  h4
   {
     font-size: map-get($font-size-restaurant-p , "pc");
     font-weight: lighter;
   }
 
-  .p-fonctionnement
-  {
-    font-size: map-get($font-size-p-fonctionnement ,"pc");
-  }
 
   .footer-a
   {
@@ -176,15 +172,10 @@
       color: white;
     }
   
-    .p-restaurant
+    h4
     {
       font-size: map-get($font-size-restaurant-p , "tablet");
       font-weight: lighter;
-    }
-
-    .p-fonctionnement
-    {
-      font-size: map-get($font-size-p-fonctionnement ,"tablet");
     }
 
     .footer-a
@@ -269,11 +260,6 @@
       font-size: map-get($font-size-p-localisation , "mobile" );
     }
 
-    .p-fonctionnement
-    {
-      font-size: map-get($font-size-p-fonctionnement , "mobile" );
-    }
-
     a
     {
       font-size: map-get($font-size-a,"mobile" );
@@ -286,7 +272,7 @@
       color: white;
     }
   
-    .p-restaurant
+    h4
     {
       font-size: map-get($font-size-restaurant-p , "mobile");
       font-weight: lighter;

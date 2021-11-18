@@ -168,7 +168,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-family: "Roboto", "Sans Serif";
   font-weight: bold;
 }
@@ -197,13 +197,9 @@ a {
   color: white;
 }
 
-.p-restaurant {
+h4 {
   font-size: 1rem;
   font-weight: lighter;
-}
-
-.p-fonctionnement {
-  font-size: 1.2rem;
 }
 
 .footer-a {
@@ -249,12 +245,12 @@ a {
     font-family: "Roboto", "Sans Serif";
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: "Roboto", "Sans Serif";
     font-weight: bold;
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
   }
@@ -273,12 +269,9 @@ a {
     font-size: 1rem;
     color: white;
   }
-  .p-restaurant {
+  h4 {
     font-size: 1.2rem;
     font-weight: lighter;
-  }
-  .p-fonctionnement {
-    font-size: 1.3rem;
   }
   .footer-a {
     font-size: 1rem;
@@ -317,7 +310,7 @@ a {
     font-family: "Roboto", "Sans Serif";
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Roboto", "Sans Serif";
     font-weight: bold;
   }
@@ -333,9 +326,6 @@ a {
   .p-localisation {
     font-size: 1.2rem;
   }
-  .p-fonctionnement {
-    font-size: 1rem;
-  }
   a {
     font-size: 1.1rem;
     font-family: "Roboto", "Sans Serif";
@@ -344,7 +334,7 @@ a {
     font-size: 0.9rem;
     color: white;
   }
-  .p-restaurant {
+  h4 {
     font-size: 1rem;
     font-weight: lighter;
   }
@@ -1128,7 +1118,11 @@ header img {
   }
 }
 
-.fonctionnement__etapes__etape p:nth-child(3) {
+.fonctionnement__etapes__etape h3 {
+  font-weight: normal;
+}
+
+.fonctionnement__etapes__etape h3:nth-child(3) {
   color: black;
   padding: 0 2%;
 }
@@ -1300,7 +1294,7 @@ header img {
           align-items: center;
 }
 
-.restaurants__cards__card__descriptionContainer h4 {
+.restaurants__cards__card__descriptionContainer h3 {
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -1833,14 +1827,14 @@ header img {
   color: white;
 }
 
-.footer h3 {
+.footer h2 {
   font-family: "Shrikhand", "Sans Serif";
   font-weight: normal;
   padding: 20px 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .footer h3 {
+  .footer h2 {
     margin-bottom: 20px;
   }
 }
