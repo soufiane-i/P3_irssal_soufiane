@@ -61,7 +61,7 @@ header {
 
     @include tablet-only
     {
-        padding-top: 25px;
+        padding-top: 30px;
         padding-bottom: 25px;
         img
         {
@@ -74,8 +74,9 @@ header {
         border: none;
         background-color: white;
         position: absolute;
-        left: 7%;
+        left: 2%;
         top: 20px;
+        transform: scale(0.6);
         i
         {
             color: black;
@@ -83,14 +84,14 @@ header {
         @include tablet-only
         {
             display: block;
-            top: 30px;
+            top: 15px;
 
         }
 
         @include mobile-only
         {
             display: block;
-            top: 30px;
+            top: 10px;
         }
     }
 

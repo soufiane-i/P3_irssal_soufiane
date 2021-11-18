@@ -28,7 +28,7 @@ $font-size-button : ("mobile": 1rem, "tablet": 1.3rem, "pc": 1.5rem);
 
 
 //menu
-$font-size-h1Menu : ("mobile": 1.8rem, "tablet": 2.5rem, "pc": 3rem);
+$font-size-h1Menu : ("mobile": 1.8rem, "tablet": 2.5rem, "pc": 2.8rem);
 $font-size-h2Menu : ("mobile": 1rem, "tablet": 2rem, "pc": 2rem);
 $font-size-h3Menu : ("mobile": 1.2rem, "tablet": 2rem, "pc": 1.8rem);
 $font-size-pMenu : ("mobile": 1rem, "tablet": 1.6rem, "pc": 1.8rem);
@@ -48,22 +48,20 @@ $anim-delay: $anim-dur / 5;
     0%
     {
         opacity: 0;
-        transform: scale(0.6) scaleY(0) scaleX(1.05) translateY(-15%) translateX(-5%);
+        transform: scaleY(0);
     }
 
 
-    20%
+    40%
     {
         opacity: 0.1;
-        transform: scale(0.6) scaleY(0) scaleX(0.2) translateY(-15%) translateX(-5%);
-
+        transform: scaleY(0) scaleX(0);
     }
 
     100%
     {
         opacity: 1;
-        transform: scale(0.6) scaleY(1.2) scaleX(1.1) translateY(-15%) translateX(-8%);
-
+        transform: scaleY(1);
     }
     
 }
@@ -144,6 +142,54 @@ $anim-delay: $anim-dur / 5;
 
     }
     
+}
+
+@keyframes checkOpenPC {
+    0%
+    {
+        
+        transform: rotate(-360deg);
+    }
+
+
+
+    100%
+    {
+        
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes checkOpenTablet {
+    0%
+    {
+        
+        transform: rotate(-360deg) scale(0.8);
+    }
+
+
+
+    100%
+    {
+        
+        transform: rotate(0deg) scale(0.8);
+    }
+}
+
+@keyframes checkOpenMobile {
+    0%
+    {
+        
+        transform: rotate(-360deg) scale(0.5);
+    }
+
+
+
+    100%
+    {
+        
+        transform: rotate(0deg) scale(0.5);
+    }
 }
 
 

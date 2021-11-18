@@ -147,64 +147,47 @@
             
                     i
                     {
-                        width: 32px;
-                        height: 28px;
+             
+                        position: absolute;
+                    }
 
-                        @include tablet-only
-                        {
-                            width: 30px;
-                        }
-
-/*                         &:hover
+                       &:hover
                         {
     
                             .fas
                             {
     
-                                animation: heartOpacityPC 0.3s forwards ease;
+                                transform: scaleY(1) scaleX(1);
+                                transition: transform 0.3s linear;
     
-                                @include mobile-only
-                                {
-                                    animation: heartOpacityMobile 0.3s forwards ease;
-                                }
+
     
                             }
     
-                            .fas::before 
-                            {
-                                color: transparent;
-                                position: relative;
-                                background-clip: text;
-                                background-image: linear-gradient(to top, $color-secondary, $color-primary);
-                                text-align: center;
-                                transform-origin: bottom;
-                                transition: all 1s ease-in-out;
-                            }
                             
-                        } */
-                    }
+                        } 
+                    
                     .far
                     {
- 
+                        z-index: 1;
                     }
 
                     
 
                     .fas
                     {
-
                         
+                        color: $color-primary;
+                        display: block;
+                        background: -webkit-linear-gradient($color-secondary, $color-primary);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        z-index: 0;
+                        transform: scaleY(0) scaleX(0);
+                        transform-origin: bottom;
+                        opacity: 1;
                     }
 
-                    .fas::before 
-                    {
-                        
-                        
-                        
-                        background-image: linear-gradient(to top, $color-secondary, $color-primary);
-                        
-                        
-                    }
 
 
 
