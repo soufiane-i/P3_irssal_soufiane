@@ -690,7 +690,7 @@ h4 {
 }
 
 header {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -750,12 +750,11 @@ header img {
 }
 
 .headerMenu__arrow {
-  display: none;
   border: none;
   background-color: white;
   position: absolute;
   left: 7%;
-  top: 28px;
+  top: 40px;
 }
 
 .headerMenu__arrow i {
