@@ -3,7 +3,7 @@
     padding: 20px 5%;
     background-color: #353535;
     color: white;
-    h2
+    h3
     {
         font-family: "Shrikhand", "Sans Serif";
         font-weight: normal;
@@ -12,6 +12,12 @@
         @include tablet-only
         {
             margin-bottom: 20px;
+        }
+
+        @include mobile-only
+        {
+            margin-bottom: 10px;
+            margin-bottom: 0;
         }
 
 

@@ -4,6 +4,7 @@ header {
     padding-bottom: 30px;
     text-align: center;
 
+
     img
     {
         transform: scale(1.5);
@@ -37,21 +38,35 @@ header {
 
 .headerMenu
 {
+    padding-top: 35px;
+    padding-bottom: 30px;
     text-align: center;
-    position: relative;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+
+    img
+    {
+        transform: scale(1.5);
+    }
+
+    
     @include mobile-only
     {
-        height: 70px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        img
+        {
+            transform: scale(1);
+        }
     }
 
     @include tablet-only
     {
-        height: 90px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        img
+        {
+            transform: scale(1);
+        }
     }
 
     &__arrow
@@ -60,7 +75,7 @@ header {
         background-color: white;
         position: absolute;
         left: 7%;
-        top: 40px;
+        top: 20px;
         i
         {
             color: black;
@@ -79,9 +94,6 @@ header {
         }
     }
 
-    &__logo
-    {
-        width: auto;
-    }
+
 
 }

@@ -155,7 +155,7 @@
                             width: 30px;
                         }
 
-                        &:hover, &:active 
+/*                         &:hover
                         {
     
                             .fas
@@ -181,41 +181,28 @@
                                 transition: all 1s ease-in-out;
                             }
                             
-                        }
+                        } */
                     }
                     .far
                     {
-                        display: inline-block;
-                        transform: scale(1);
-                        display: flex;
-                        position: relative;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        overflow: hidden;
+ 
                     }
 
                     
 
                     .fas
                     {
-                        position: absolute;
-                        transform: scale(0.6) scaleX(1.05) scaleY(0) translateY(-9px) translateX(-3px);
-                        transform-origin: bottom;
-                        top: 0px;
-                        left: 0px;
-                        opacity: 0;
-                        z-index: -1;
+
                         
                     }
 
                     .fas::before 
                     {
-                        color: transparent;
-                        position: relative;
-                        background-clip: text;
+                        
+                        
+                        
                         background-image: linear-gradient(to top, $color-secondary, $color-primary);
-                        transform-origin: bottom;
+                        
                         
                     }
 
