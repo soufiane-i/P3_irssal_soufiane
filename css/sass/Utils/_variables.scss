@@ -1,3 +1,10 @@
+//Breakpoints
+$breakpoints: (
+    mobile: 768px,
+    min-tablet: 769px,
+    max-tablet: 992px
+);
+
 //Generals
 
 //Acceuil
@@ -20,7 +27,7 @@ $font-size-p : ("mobile": 1.2rem, "tablet": 1.5rem, "pc": 1.5rem);
 $font-size-p-localisation : ("mobile": 1.2rem, "tablet": 1.5rem, "pc": 1rem);
 $font-size-p-fonctionnement : ("mobile": 1rem, "tablet": 1.3rem, "pc": 1.2rem);
 $font-size-restaurant-p : ("mobile": 1rem, "tablet": 1.2rem, "pc": 1rem);
-$font-size-a : ("mobile": 1.1rem, "tablet": 1.3rem, "pc": 1.3rem);
+$font-size-a : ("mobile": 1.1rem, "tablet": 1.3rem, "pc": 1.6rem);
 $font-size-footer-a : ("mobile": 0.9rem, "tablet": 1rem, "pc": 1rem);
 $font-size-numero : ("mobile": 0.9rem, "tablet": 1rem, "pc": 1rem);
 $font-size-button : ("mobile": 1rem, "tablet": 1.3rem, "pc": 1.5rem);
@@ -180,7 +187,7 @@ $anim-delay: $anim-dur / 5;
     0%
     {
         
-        transform: rotate(-360deg) scale(0.5);
+        transform: rotate(-360deg) scale(0.6);
     }
 
 
@@ -188,15 +195,13 @@ $anim-delay: $anim-dur / 5;
     100%
     {
         
-        transform: rotate(0deg) scale(0.5);
+        transform: rotate(0deg) scale(0.6);
     }
 }
 
 
 
 
-//Breakpoints
-$breakpoints: (
-    mobile: 768px,
-    tablet: 992px,
-);
+
+
+

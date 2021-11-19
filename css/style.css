@@ -188,23 +188,23 @@
 
 @-webkit-keyframes checkOpenMobile {
   0% {
-    -webkit-transform: rotate(-360deg) scale(0.5);
-            transform: rotate(-360deg) scale(0.5);
+    -webkit-transform: rotate(-360deg) scale(0.6);
+            transform: rotate(-360deg) scale(0.6);
   }
   100% {
-    -webkit-transform: rotate(0deg) scale(0.5);
-            transform: rotate(0deg) scale(0.5);
+    -webkit-transform: rotate(0deg) scale(0.6);
+            transform: rotate(0deg) scale(0.6);
   }
 }
 
 @keyframes checkOpenMobile {
   0% {
-    -webkit-transform: rotate(-360deg) scale(0.5);
-            transform: rotate(-360deg) scale(0.5);
+    -webkit-transform: rotate(-360deg) scale(0.6);
+            transform: rotate(-360deg) scale(0.6);
   }
   100% {
-    -webkit-transform: rotate(0deg) scale(0.5);
-            transform: rotate(0deg) scale(0.5);
+    -webkit-transform: rotate(0deg) scale(0.6);
+            transform: rotate(0deg) scale(0.6);
   }
 }
 
@@ -254,7 +254,7 @@ p {
 }
 
 a {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: "Roboto", "Sans Serif";
 }
 
@@ -301,7 +301,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   h1 {
     font-size: 2.1rem;
     font-family: "Roboto", "Sans Serif";
@@ -464,7 +464,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .load {
     -webkit-animation: loadTablet 2.6s forwards;
             animation: loadTablet 2.6s forwards;
@@ -777,7 +777,7 @@ header img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   header {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -810,7 +810,7 @@ header img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .headerMenu {
     padding-top: 30px;
     padding-bottom: 25px;
@@ -835,7 +835,7 @@ header img {
   color: black;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .headerMenu__arrow {
     display: block;
     top: 15px;
@@ -878,6 +878,8 @@ header img {
   font-family: "Roboto", "Sans Serif";
   font-weight: normal;
   position: relative;
+  padding: 20px 55px;
+  max-width: 250px;
 }
 
 .button__main a {
@@ -885,7 +887,7 @@ header img {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .button__main a {
     font-size: 1.3rem;
   }
@@ -894,19 +896,6 @@ header img {
 @media screen and (max-width: 768px) {
   .button__main a {
     font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .button__main {
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .button__main {
-    padding: 15px 55px;
-    max-width: 250px;
   }
 }
 
@@ -934,7 +923,7 @@ header img {
   margin-bottom: 3vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .presentation {
     margin-bottom: 6vw;
   }
@@ -983,7 +972,7 @@ header img {
   margin-left: 6%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .presentation__main h1 {
     padding: 30px 5%;
     padding-bottom: 10px;
@@ -1000,7 +989,7 @@ header img {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .presentation__main p {
     margin-bottom: 13vw;
   }
@@ -1031,7 +1020,7 @@ header img {
   margin-bottom: 4vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1056,7 +1045,7 @@ header img {
   width: 90%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .fonctionnement h2 {
     margin-bottom: 8vw;
   }
@@ -1085,7 +1074,7 @@ header img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .fonctionnement__etapes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1134,7 +1123,7 @@ header img {
   color: #9356DC;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .fonctionnement__etapes__etape {
     width: 55%;
   }
@@ -1165,7 +1154,7 @@ header img {
   left: -1vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .fonctionnement__etapes__etape__numero {
     width: 35px;
     height: 35px;
@@ -1218,7 +1207,7 @@ header img {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1237,7 +1226,7 @@ header img {
   margin-bottom: 5vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .restaurants h2 {
     margin-bottom: 8vw;
   }
@@ -1269,7 +1258,7 @@ header img {
   width: 90%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .restaurants__cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1316,7 +1305,7 @@ header img {
   width: 40%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .restaurants__cards__card {
     width: 47%;
   }
@@ -1436,7 +1425,7 @@ header img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte {
     width: 100%;
   }
@@ -1457,7 +1446,7 @@ header img {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__image {
     height: 60vw;
   }
@@ -1472,11 +1461,11 @@ header img {
 .carte__contenu {
   background-color: #f6f6f6;
   padding-top: 25vw;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__contenu {
     width: 100%;
     padding-top: 50vw;
@@ -1508,7 +1497,7 @@ header img {
   border-top-right-radius: 50px;
   z-index: 1;
   position: relative;
-  padding: 2vw 8%;
+  padding: 20px 5% 30px 3%;
   width: 100%;
 }
 
@@ -1546,6 +1535,13 @@ header img {
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .carte__contenu__head__heart:hover .fas {
+    -webkit-transform: scaleY(0.95) scaleX(1);
+            transform: scaleY(0.95) scaleX(1);
+  }
+}
+
 .carte__contenu__head__heart .far {
   z-index: 1;
 }
@@ -1569,7 +1565,7 @@ header img {
   position: relative;
   z-index: 1;
   background-color: #f6f6f6;
-  padding: 0 3%;
+  padding: 20px 3%;
 }
 
 .carte__contenu__partie h2 {
@@ -1683,7 +1679,7 @@ header img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__contenu__partie__cards__card:hover .carte__contenu__partie__cards__card__right__check i {
     -webkit-animation: checkOpenTablet 0.5s linear forwards;
             animation: checkOpenTablet 0.5s linear forwards;
@@ -1740,7 +1736,7 @@ header img {
   padding-right: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__contenu__partie__cards__card__right .prixMenu {
     padding-bottom: 20px;
     padding-right: 30px;
@@ -1777,11 +1773,11 @@ header img {
   width: 120px;
   height: 100%;
   color: white;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(0) scale(0.6);
+          transform: rotate(0) scale(0.6);
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__contenu__partie__cards__card__right__check i {
     width: 120px;
     -webkit-transform: rotate(0) scale(0.8);
@@ -1792,8 +1788,8 @@ header img {
 @media screen and (max-width: 768px) {
   .carte__contenu__partie__cards__card__right__check i {
     width: 60px;
-    -webkit-transform: rotate(0) scale(0.5);
-            transform: rotate(0) scale(0.5);
+    -webkit-transform: rotate(0) scale(0.6);
+            transform: rotate(0) scale(0.6);
   }
 }
 
@@ -1814,7 +1810,7 @@ header img {
   padding: 20px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .footer h3 {
     margin-bottom: 20px;
   }
@@ -1842,7 +1838,7 @@ header img {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .footer__liens__lien {
     margin-bottom: 20px;
   }
@@ -1853,7 +1849,7 @@ header img {
   margin-right: 1vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .footer__liens__lien__i {
     width: 2vw;
   }

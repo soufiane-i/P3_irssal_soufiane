@@ -21,7 +21,8 @@
     font-family: "Roboto", "Sans Serif";
     font-weight: normal;
     position: relative;
-    
+    padding: 20px 55px;
+    max-width: 250px;
    
 
     a
@@ -47,13 +48,12 @@
 
     @include tablet-only
     {
-        padding: 30px;
+
     }
 
     @include mobile-only
     {
-        padding: 15px 55px;
-        max-width: 250px;
+
     }
 
     &__opacity
