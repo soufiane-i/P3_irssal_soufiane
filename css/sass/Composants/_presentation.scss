@@ -41,6 +41,9 @@
         padding: 20px 5%;
         padding-bottom: 80px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
 
         h1
@@ -76,6 +79,12 @@
             {
                 margin-bottom: 10vw;
             }
+        }
+
+        .button
+        {
+
+            
         }
     }
 
