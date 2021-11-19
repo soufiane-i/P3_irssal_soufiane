@@ -1499,6 +1499,8 @@ header img {
   position: relative;
   padding: 20px 5% 30px 3%;
   width: 100%;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .carte__contenu__head h1 {
@@ -1537,8 +1539,8 @@ header img {
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .carte__contenu__head__heart:hover .fas {
-    -webkit-transform: scaleY(0.95) scaleX(1);
-            transform: scaleY(0.95) scaleX(1);
+    -webkit-transform: scaleY(0.9) scaleX(1);
+            transform: scaleY(0.9) scaleX(1);
   }
 }
 
@@ -1773,8 +1775,8 @@ header img {
   width: 120px;
   height: 100%;
   color: white;
-  -webkit-transform: rotate(0) scale(0.6);
-          transform: rotate(0) scale(0.6);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
