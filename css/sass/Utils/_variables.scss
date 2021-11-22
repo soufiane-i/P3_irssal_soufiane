@@ -154,7 +154,7 @@ $anim-delay: $anim-dur / 5;
     0%
     {
         
-        transform: rotate(-360deg);
+        transform: rotate(-360deg) scale(0.8);
     }
 
 
@@ -162,7 +162,7 @@ $anim-delay: $anim-dur / 5;
     100%
     {
         
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(0.8);
     }
 }
 
@@ -186,7 +186,7 @@ $anim-delay: $anim-dur / 5;
     0%
     {
         
-        transform: rotate(-360deg) scale(0.6);
+        transform: rotate(-360deg) scale(0.45);
     }
 
 
@@ -194,7 +194,7 @@ $anim-delay: $anim-dur / 5;
     100%
     {
         
-        transform: rotate(0deg) scale(0.6);
+        transform: rotate(0deg) scale(0.45);
     }
 }
 

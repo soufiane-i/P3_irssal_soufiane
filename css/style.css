@@ -144,23 +144,23 @@
 
 @-webkit-keyframes checkOpenPC {
   0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg) scale(0.8);
+            transform: rotate(-360deg) scale(0.8);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) scale(0.8);
+            transform: rotate(0deg) scale(0.8);
   }
 }
 
 @keyframes checkOpenPC {
   0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg) scale(0.8);
+            transform: rotate(-360deg) scale(0.8);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) scale(0.8);
+            transform: rotate(0deg) scale(0.8);
   }
 }
 
@@ -188,23 +188,23 @@
 
 @-webkit-keyframes checkOpenMobile {
   0% {
-    -webkit-transform: rotate(-360deg) scale(0.6);
-            transform: rotate(-360deg) scale(0.6);
+    -webkit-transform: rotate(-360deg) scale(0.45);
+            transform: rotate(-360deg) scale(0.45);
   }
   100% {
-    -webkit-transform: rotate(0deg) scale(0.6);
-            transform: rotate(0deg) scale(0.6);
+    -webkit-transform: rotate(0deg) scale(0.45);
+            transform: rotate(0deg) scale(0.45);
   }
 }
 
 @keyframes checkOpenMobile {
   0% {
-    -webkit-transform: rotate(-360deg) scale(0.6);
-            transform: rotate(-360deg) scale(0.6);
+    -webkit-transform: rotate(-360deg) scale(0.45);
+            transform: rotate(-360deg) scale(0.45);
   }
   100% {
-    -webkit-transform: rotate(0deg) scale(0.6);
-            transform: rotate(0deg) scale(0.6);
+    -webkit-transform: rotate(0deg) scale(0.45);
+            transform: rotate(0deg) scale(0.45);
   }
 }
 
@@ -1772,8 +1772,8 @@ header img {
   width: 120px;
   height: 100%;
   color: white;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(0) scale(0.8);
+          transform: rotate(0) scale(0.8);
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -1787,8 +1787,8 @@ header img {
 @media screen and (max-width: 768px) {
   .carte__contenu__partie__cards__card__right__check i {
     width: 60px;
-    -webkit-transform: rotate(0) scale(0.6);
-            transform: rotate(0) scale(0.6);
+    -webkit-transform: rotate(0) scale(0.45);
+            transform: rotate(0) scale(0.45);
   }
 }
 

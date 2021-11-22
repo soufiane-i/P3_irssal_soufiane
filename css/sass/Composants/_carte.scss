@@ -346,7 +346,7 @@
                                     width: 120px;
                                     height: 100%;
                                     color: white;
-                                    transform: rotate(0);
+                                    transform: rotate(0) scale(0.8);
                                    
                                     @include tablet-only
                                     {
@@ -357,7 +357,7 @@
                                     @include mobile-only
                                     {
                                         width: 60px;
-                                        transform: rotate(0) scale(0.6);
+                                        transform: rotate(0) scale(0.45);
                                         
                                     }
      
