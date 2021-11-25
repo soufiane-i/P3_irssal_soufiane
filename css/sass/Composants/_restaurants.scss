@@ -138,12 +138,24 @@
 
                 &__right
                 {
-                    width: 15%;
+                    width: 25%;
                     height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     position: relative;
+                    transform: scale(0.8);
+
+                    @include tablet-only
+                    {
+                        transform: scale(0.9);
+                        width: 25%;
+                    }
+                    @include mobile-only
+                    {
+                        transform: scale(1);
+                        width: 20%;
+                    }
             
                     i
                     {
@@ -157,11 +169,30 @@
                             .fas
                             {
     
-                                transform: scaleY(1) scaleX(1);
-                                transition: transform 0.3s linear;
+                                transform: translateX(0px) translateY(5px) scaleY(0.9) scaleX(0.95) scale(1.6);
+                                transition: transform 0.2s linear;
+                                
     
+                                @include tablet-only
+                                {
+                                    transform: translateX(0px) translateY(4px) scaleY(0.9) scaleX(1) scale(1.6);
 
+                                }
+
+                                @include mobile-only
+                                {
+                                    transform: translateX(0px) translateY(4px) scaleY(0.95) scaleX(0.95) scale(1.6);
+
+                                }
     
+                            }
+
+                            .far
+                            {
+                                background: -webkit-linear-gradient($color-secondary, $color-primary);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                
                             }
     
                             
@@ -170,6 +201,7 @@
                     .far
                     {
                         z-index: 1;
+                        transform:  scale(1.5) scaleX(1.05);
                     }
 
                     
@@ -183,7 +215,7 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         z-index: 0;
-                        transform: scaleY(0) scaleX(0);
+                        transform: translateX(1px) translateY(2px) scaleY(0) scaleX(0) scale(1.6);
                         transform-origin: bottom;
                         opacity: 1;
                     }
