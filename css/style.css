@@ -253,6 +253,10 @@ p {
   font-size: 1rem;
 }
 
+.p-nouveau {
+  font-size: 1.2rem;
+}
+
 a {
   font-size: 1.6rem;
   font-family: "Roboto", "Sans Serif";
@@ -323,6 +327,9 @@ h4 {
   .p-localisation {
     font-size: 1.5rem;
   }
+  .p-nouveau {
+    font-size: 1.4rem;
+  }
   a {
     font-size: 1.3rem;
     font-family: "Roboto", "Sans Serif";
@@ -383,6 +390,9 @@ h4 {
     font-family: "Roboto", "Sans Serif";
   }
   .p-localisation {
+    font-size: 1.2rem;
+  }
+  .p-nouveau {
     font-size: 1.2rem;
   }
   a {
@@ -1330,7 +1340,7 @@ header img {
      object-fit: cover;
 }
 
-.restaurants__cards__card__imgContainer h4 {
+.restaurants__cards__card__imgContainer .p-nouveau {
   position: absolute;
   top: 8%;
   right: 5%;

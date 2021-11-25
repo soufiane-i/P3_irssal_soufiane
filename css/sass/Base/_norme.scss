@@ -57,6 +57,11 @@
     font-size: map-get($font-size-p-localisation, "pc" );
   }
 
+  .p-nouveau
+  {
+    font-size: map-get($font-size-p-nouveau, "pc" );
+  }
+
   a
   {
     font-size: map-get($font-size-a,"pc");
@@ -157,6 +162,10 @@
       font-size: map-get($font-size-p-localisation, "tablet" );
     }
 
+    .p-nouveau
+    {
+      font-size: map-get($font-size-p-nouveau, "tablet" );
+    }
     a
     {
       font-size: map-get($font-size-a,"tablet");
@@ -252,6 +261,11 @@
     .p-localisation
     {
       font-size: map-get($font-size-p-localisation , "mobile" );
+    }
+
+    .p-nouveau
+    {
+      font-size: map-get($font-size-p-nouveau, "mobile" );
     }
 
     a
